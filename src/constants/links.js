@@ -74,7 +74,7 @@ export default {
     target: '_blank',
   },
   googlemaps: {
-    to: 'https://maps.app.goo.gl/wfLb1JAmjq53pLZH6',
+    to: 'https://www.google.com/maps/search/300+Jaarbeursboulevard+3521+BC+Utrecht/',
     target: '_blank',
   },
   youtube: {
