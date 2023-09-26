@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'components/shared/link';
 
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
+import LucaCamphuisenPhoto from './images/luca-camphuisen-photo.png';
 import PabloMusaPhoto from './images/pablo-musa-photo.png';
 import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
 
@@ -25,6 +26,12 @@ const ITEMS = [
     position: 'Curriculum Developer at Sysdig',
     photo: PabloMusaPhoto,
     url: 'https://www.linkedin.com/in/pmusa/',
+  },
+  {
+    name: 'Luca Camphuisen',
+    position: 'Owner at Logic Shift',
+    photo: LucaCamphuisenPhoto,
+    url: 'https://www.linkedin.com/in/luca-camphuisen/',
   },
 ];
 
