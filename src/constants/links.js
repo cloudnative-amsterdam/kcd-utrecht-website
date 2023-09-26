@@ -66,7 +66,7 @@ export default {
 
   // Social-links
   linkedin: {
-    to: 'https://www.linkedin.com/company/cloudnativeams/',
+    to: 'https://www.linkedin.com/company/cloudnativenl/',
     target: '_blank',
   },
   twitter: {
