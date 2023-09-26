@@ -25,9 +25,9 @@ import Modal from 'components/shared/modal';
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
-    time: 'T.B.A.',
+    time: '8:30',
     title: 'To be announced',
-    duration: 'T.B.A.',
+    duration: '9 hours 30 min',
   },
   // {
   //   time: '8:00',
