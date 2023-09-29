@@ -5,6 +5,7 @@ import Link from 'components/shared/link';
 
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
 import LucaCamphuisenPhoto from './images/luca-camphuisen-photo.png';
+import MatteoBianchiPhoto from './images/matteo-bianchi-photo.png';
 import PabloMusaPhoto from './images/pablo-musa-photo.png';
 import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
 
@@ -32,6 +33,12 @@ const ITEMS = [
     position: 'Owner at Logic Shift',
     photo: LucaCamphuisenPhoto,
     url: 'https://www.linkedin.com/in/luca-camphuisen/',
+  },
+  {
+    name: 'Matteo Bianchi',
+    position: 'Independent',
+    photo: MatteoBianchiPhoto,
+    url: 'https://www.linkedin.com/in/mbianchidev/',
   },
 ];
 
