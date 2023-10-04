@@ -19,12 +19,18 @@ import LINKS from 'constants/links';
 // import Swisscom from 'icons/swisscom.svg';
 // import Vmware from 'icons/vmware.svg';
 // import Vshn from 'icons/vshn.svg';
+import EDB from 'icons/edb.png';
+import Rabobank from 'icons/rabobank.svg';
+import StackState from 'icons/stackstate.svg';
 
 const TITLE = 'Sponsors';
 
 const ITEMS = [
   {
     logos: [
+      { icon: EDB, url: 'https://www.enterprisedb.com/' },
+      { icon: Rabobank, url: 'https://www.rabobank.com/' },
+      { icon: StackState, url: 'https://www.stackstate.com/' },
       // { icon: Postfinance, url: 'https://www.postfinance.ch/' },
       // { icon: Camptocamp, url: 'https://www.camptocamp.com/' },
       // { icon: Puzzle, url: 'https://www.puzzle.ch/' },
@@ -34,7 +40,7 @@ const ITEMS = [
       // { icon: Acend, url: 'https://acend.ch/' },
     ],
     cardClassname:
-      'min-w-[280px] min-h-[104px] sm:min-w-[250px] sm:w-fit sm:min-h-[94px] xs:min-w-fit xs:max-w-full',
+      'min-w-[280px] min-h-[94px] sm:min-w-[250px] sm:w-fit sm:min-h-[94px] sm:max-h-[94px] xs:min-w-fit xs:max-w-full',
   },
 ];
 
