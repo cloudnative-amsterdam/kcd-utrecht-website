@@ -2,16 +2,14 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
-// import Rokt from 'icons/rokt.svg';
-// import WhiteRabbit from 'icons/white-rabbit.svg';
 import KubeCareers from './images/kube-careers.png';
+import RebelAstronaut from './images/rebel-astronaut.png';
 
 const TITLE = 'Community & Media Partners';
 
 const ITEMS = [
-  // { icon: Rokt, url: 'https://rokt.cloud/' },
-  // { icon: WhiteRabbit, url: 'https://www.whiterabbitcom.ch' },
   { icon: KubeCareers, url: 'https://kube.careers/' },
+  { icon: RebelAstronaut, url: 'https://rebelastronaut.co.uk/' }
 ];
 
 const Partners = () => (
