@@ -3,13 +3,15 @@ import React from 'react';
 import Link from 'components/shared/link';
 
 import KubeCareers from './images/kube-careers.png';
+import KubeEvents from './images/kubevents.svg';
 import RebelAstronaut from './images/rebel-astronaut.png';
 
 const TITLE = 'Community & Media Partners';
 
 const ITEMS = [
   { icon: KubeCareers, url: 'https://kube.careers/' },
-  { icon: RebelAstronaut, url: 'https://rebelastronaut.co.uk/' }
+  { icon: KubeEvents, url: 'https://kube.events/' },
+  { icon: RebelAstronaut, url: 'https://rebelastronaut.co.uk/' },
 ];
 
 const Partners = () => (
