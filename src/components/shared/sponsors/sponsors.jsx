@@ -4,22 +4,10 @@ import React from 'react';
 import Button from 'components/shared/button';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links';
-// import Acend from 'icons/acend-logo.svg';
-// import Adfinis from 'icons/adfinis.svg';
-// import BGNova from 'icons/bg-nova.svg';
-// import Camptocamp from 'icons/camptocamp.svg';
-// import Dynatrace from 'icons/dynatrace.svg';
-// import Flow from 'icons/flow.svg';
-// import Google from 'icons/google-cloud.svg';
-// import Innoq from 'icons/innoq.svg';
+import Edb from 'icons/edb.svg';
+// import Fullstaq from 'icons/fullstaq.png';
+// import Hcs from 'icons/hcs.svg';
 // import Isovalent from 'icons/isovalent.svg';
-// import Postfinance from 'icons/postfinance.svg';
-// import Puzzle from 'icons/puzzle.svg';
-// import RedHat from 'icons/red-hat.svg';
-// import Swisscom from 'icons/swisscom.svg';
-// import Vmware from 'icons/vmware.svg';
-// import Vshn from 'icons/vshn.svg';
-import EDB from 'icons/edb.png';
 import Rabobank from 'icons/rabobank.svg';
 import StackState from 'icons/stackstate.svg';
 
@@ -28,19 +16,16 @@ const TITLE = 'Sponsors';
 const ITEMS = [
   {
     logos: [
-      { icon: EDB, url: 'https://www.enterprisedb.com/' },
+      { icon: Edb, url: 'https://www.enterprisedb.com/' },
+      // { icon: Fullstaq, url: 'https://www.fullstaq.com/'},
+      // { icon: Hcs, url: 'https://www.hcs-company.com/' },
+      // { icon: Isovalent, url: 'https://isovalent.com/' },
       { icon: Rabobank, url: 'https://www.rabobank.com/' },
       { icon: StackState, url: 'https://www.stackstate.com/' },
-      // { icon: Postfinance, url: 'https://www.postfinance.ch/' },
-      // { icon: Camptocamp, url: 'https://www.camptocamp.com/' },
-      // { icon: Puzzle, url: 'https://www.puzzle.ch/' },
-      // { icon: Camptocamp, url: 'https://www.camptocamp.com/' },
-      // { icon: BGNova, url: 'https://b-nova.com/' },
-      // { icon: Camptocamp, url: 'https://www.camptocamp.com/' },
-      // { icon: Acend, url: 'https://acend.ch/' },
     ],
     cardClassname:
-      'min-w-[280px] min-h-[94px] sm:min-w-[250px] sm:w-fit sm:min-h-[94px] sm:max-h-[94px] xs:min-w-fit xs:max-w-full',
+      'min-w-[384px] min-h-[122px] sm:min-w-[320px] sm:min-h-[115px] xs:min-w-fit xs:max-w-full',
+    iconClassname: 'max-w-[330px] sm:min-w-[290px]',
   },
 ];
 
