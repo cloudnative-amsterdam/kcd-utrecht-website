@@ -5,7 +5,7 @@ import Button from 'components/shared/button';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links';
 import Edb from 'icons/edb.svg';
-// import Fullstaq from 'icons/fullstaq.png';
+import Fullstaq from 'icons/fullstaq.svg';
 // import Hcs from 'icons/hcs.svg';
 // import Isovalent from 'icons/isovalent.svg';
 import Rabobank from 'icons/rabobank.svg';
@@ -17,7 +17,7 @@ const ITEMS = [
   {
     logos: [
       { icon: Edb, url: 'https://www.enterprisedb.com/' },
-      // { icon: Fullstaq, url: 'https://www.fullstaq.com/'},
+      { icon: Fullstaq, url: 'https://www.fullstaq.com/' },
       // { icon: Hcs, url: 'https://www.hcs-company.com/' },
       // { icon: Isovalent, url: 'https://isovalent.com/' },
       { icon: Rabobank, url: 'https://www.rabobank.com/' },
