@@ -9,8 +9,8 @@ import Fullstaq from 'icons/fullstaq.svg';
 // import Hcs from 'icons/hcs.svg';
 import Isovalent from 'icons/isovalent.svg';
 import Rabobank from 'icons/rabobank.svg';
+import Rancher from 'icons/rancher.svg';
 import StackState from 'icons/stackstate.svg';
-import Suse from 'icons/suse.svg';
 
 const TITLE = 'Sponsors';
 
@@ -22,8 +22,8 @@ const ITEMS = [
       // { icon: Hcs, url: 'https://www.hcs-company.com/' },
       { icon: Isovalent, url: 'https://isovalent.com/' },
       { icon: Rabobank, url: 'https://www.rabobank.com/' },
+      { icon: Rancher, url: 'https://www.rancher.com/' },
       { icon: StackState, url: 'https://www.stackstate.com/' },
-      { icon: Suse, url: 'https://www.suse.com/' },
     ],
     cardClassname:
       'min-w-[384px] min-h-[122px] sm:min-w-[320px] sm:min-h-[115px] xs:min-w-fit xs:max-w-full',
