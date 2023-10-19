@@ -19,7 +19,7 @@ const Hero = () => (
           className="rounded-3xl bg-yellow px-4 py-2 text-sm font-bold leading-none text-black"
           dateTime="2023-06-14"
         >
-          COMING SOON
+          December 1st
         </time>
         <h1 className="mt-3 max-w-[570px] text-8xl font-bold leading-denser text-primary-1 lg:max-w-[500px] sm:text-7xl">
           {TITLE}
