@@ -25,14 +25,14 @@ const Hero = () => (
       >
         Get your ticket
       </Button>
-      {/* <Button
+      <Button
         className="mt-7 ml-3 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
         theme="primary"
         size="lg"
         {...LINKS.cfp}
       >
         Call for Papers
-      </Button> */}
+      </Button>
     </div>
   </section>
 );
