@@ -5,6 +5,7 @@ import Link from 'components/shared/link';
 
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
 import LucaCamphuisenPhoto from './images/luca-camphuisen-photo.png';
+import MarcelKerkerPhoto from './images/marcel-kerker-photo.png';
 import MatteoBianchiPhoto from './images/matteo-bianchi-photo.png';
 import PabloMusaPhoto from './images/pablo-musa-photo.png';
 import RajeshGunasekaranPhoto from './images/rajesh-gunasekaran-photo.png';
@@ -43,9 +44,15 @@ const ITEMS = [
   },
   {
     name: 'Rajesh Gunasekaran',
-    position: 'DevOps Engineer @ Cognizant',
+    position: 'DevOps Engineer at Cognizant',
     photo: RajeshGunasekaranPhoto,
     url: 'https://www.linkedin.com/in/rajesh-gunasekaran-4a146224/',
+  },
+  {
+    name: 'Marcel Kerker',
+    position: 'Sr. Platform Engineer at HCS Company',
+    photo: MarcelKerkerPhoto,
+    url: 'https://www.linkedin.com/in/mkerker/',
   },
 ];
 
