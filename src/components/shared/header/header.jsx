@@ -54,7 +54,7 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage
     >
       <div className="container flex items-center justify-between pt-5 pb-2">
         <Link className="z-50 ml-2" to="/">
-          <img className="h-20" src={Logo} alt="KCD Utrecht" />
+          <img className="h-20 md:h-14" src={Logo} alt="KCD Utrecht" />
         </Link>
 
         <nav>
