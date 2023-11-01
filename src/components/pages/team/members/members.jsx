@@ -10,6 +10,8 @@ import MatteoBianchiPhoto from './images/matteo-bianchi-photo.png';
 import PabloMusaPhoto from './images/pablo-musa-photo.png';
 import RajeshGunasekaranPhoto from './images/rajesh-gunasekaran-photo.png';
 import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
+import SerkanCapkanPhoto from './images/serkan-capkan-photo.png';
+
 
 const ITEMS = [
   {
@@ -54,6 +56,12 @@ const ITEMS = [
     photo: MarcelKerkerPhoto,
     url: 'https://www.linkedin.com/in/mkerker/',
   },
+  {
+    name: 'Serkan Capkan',
+    position: 'Solutions Architect at Cloutive',
+    photo: SerkanCapkanPhoto,
+    url: 'https://www.linkedin.com/in/serkancapkan/',
+  },  
 ];
 
 const LOGOS = [
