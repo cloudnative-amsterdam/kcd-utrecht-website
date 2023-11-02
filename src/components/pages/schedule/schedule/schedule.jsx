@@ -35,11 +35,6 @@ const ITEMS = [
     duration: '30 min',
   },
   {
-    time: '9:30',
-    title: 'Introduction',
-    duration: '5 min',
-  },
-  {
     id: '01',
     time: '9:40',
     title: 'STARTING KEYNOTE TITLE HERE',
