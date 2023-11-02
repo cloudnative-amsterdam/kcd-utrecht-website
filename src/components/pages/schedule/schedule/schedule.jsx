@@ -26,8 +26,67 @@ import Modal from 'components/shared/modal';
 const ITEMS = [
   {
     time: '8:30',
-    title: 'To be announced',
-    duration: '9 hours 30 min',
+    title: 'Registration',
+    duration: '30 min',
+  },
+  {
+    time: '9:00',
+    title: 'Breakfast',
+    duration: '30 min',
+  },
+  {
+    id: '01',
+    time: '9:30',
+    title: 'STARTING KEYNOTE TITLE HERE',
+    duration: '??? min',
+    isKeynote: true,
+    speakers: [
+      // {
+      //   id: '0',
+      //   name: 'Thomas Graf',
+      //   photo: ThomasGrafPhoto,
+      // },
+    ],
+    presentation: 'INSERT KEYNOTE ABSTRACT HERE',
+  },
+  // INSERT TALKS HERE
+  {
+    time: '11:00',
+    title: 'Morning break',
+    duration: '30 min',
+  },
+  // INSERT TALKS HERE
+  {
+    time: '12:30',
+    title: 'Lunch',
+    duration: '1 hour',
+  },
+  // INSERT TALKS HERE
+  {
+    time: '15:00',
+    title: 'Afternoon break',
+    duration: '30 min',
+  },
+  // INSERT TALKS HERE
+  {
+    id: '01',
+    time: '17:00',
+    title: 'ENDING KEYNOTE TITLE HERE',
+    duration: '??? min',
+    isKeynote: true,
+    speakers: [
+      // {
+      //   id: '0',
+      //   name: 'Thomas Graf',
+      //   photo: ThomasGrafPhoto,
+      // },
+    ],
+    presentation: 'INSERT KEYNOTE ABSTRACT HERE',
+  },
+  {
+    time: '17:30',
+    title: 'Drinks / networking',
+    duration: '1 hour',
   },
   // {
   //   time: '8:00',
