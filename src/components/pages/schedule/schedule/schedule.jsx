@@ -85,24 +85,171 @@ const ITEMS = [
     title: 'Morning break',
     duration: '20 min',
   },
-  // INSERT TALKS HERE
   {
-    time: '12:30',
+    id: '04',
+    time: '11:20',
+    title: 'TALK TITLE TRACK 1',
+    duration: '35 min',
+    speakers: [
+      // {
+      //   name: 'Priya Wadhwa',
+      //   photo: PriyaWadhwaPhoto,
+      // },
+    ],
+    presentation: 'Abstract text in here',
+    coincidedEvent: {
+      id: '05',
+      time: '11:20',
+      title: 'TALK TITLE TRACK 2',
+      duration: '35 min',
+      speakers: [
+        // {
+        //   name: 'Timo Salm',
+        //   photo: TimoSalmPhoto,
+        // },
+      ],
+      presentation: 'Put in\n' + 'abstract here',
+    },
+  },
+  {
+    time: '11:50',
+    title: 'Break',
+    duration: '10 min',
+  },
+  {
+    id: '06',
+    time: '12:05',
+    title: 'TALK TITLE TRACK 1',
+    duration: '30 min',
+    speakers: [
+      // {
+      //   name: 'Priya Wadhwa',
+      //   photo: PriyaWadhwaPhoto,
+      // },
+    ],
+    presentation: 'Abstract text in here',
+    coincidedEvent: {
+      id: '07',
+      time: '12:05',
+      title: 'TALK TITLE TRACK 2',
+      duration: '30 min',
+      speakers: [
+        // {
+        //   name: 'Timo Salm',
+        //   photo: TimoSalmPhoto,
+        // },
+      ],
+      presentation: 'Put in\n' + 'abstract here',
+    },
+  },
+  {
+    time: '12:35',
     title: 'Lunch',
     duration: '1 hour',
   },
-  // INSERT TALKS HERE
   {
-    time: '15:00',
-    title: 'Afternoon break',
+    id: '08',
+    time: '13:40',
+    title: 'TALK TITLE TRACK 1',
     duration: '30 min',
+    speakers: [
+      // {
+      //   name: 'Priya Wadhwa',
+      //   photo: PriyaWadhwaPhoto,
+      // },
+    ],
+    presentation: 'Abstract text in here',
+    coincidedEvent: {
+      id: '09',
+      time: '13:40',
+      title: 'TALK TITLE TRACK 2',
+      duration: '30 min',
+      speakers: [
+        // {
+        //   name: 'Timo Salm',
+        //   photo: TimoSalmPhoto,
+        // },
+      ],
+      presentation: 'Put in\n' + 'abstract here',
+    },
   },
-  // INSERT TALKS HERE
   {
-    id: '50',
-    time: '17:00',
+    time: '14:10',
+    title: 'Break',
+    duration: '10 min',
+  },
+  {
+    id: '10',
+    time: '14:25',
+    title: 'TALK TITLE TRACK 1',
+    duration: '30 min',
+    speakers: [
+      // {
+      //   name: 'Priya Wadhwa',
+      //   photo: PriyaWadhwaPhoto,
+      // },
+    ],
+    presentation: 'Abstract text in here',
+    coincidedEvent: {
+      id: '11',
+      time: '14:25',
+      title: 'TALK TITLE TRACK 2',
+      duration: '30 min',
+      speakers: [
+        // {
+        //   name: 'Timo Salm',
+        //   photo: TimoSalmPhoto,
+        // },
+      ],
+      presentation: 'Put in\n' + 'abstract here',
+    },
+  },
+  {
+    time: '14:55',
+    title: 'Afternoon break',
+    duration: '20 min',
+  },
+  {
+    id: '12',
+    time: '15:20',
+    title: 'TALK TITLE TRACK 1',
+    duration: '30 min',
+    speakers: [
+      // {
+      //   name: 'Priya Wadhwa',
+      //   photo: PriyaWadhwaPhoto,
+      // },
+    ],
+    presentation: 'Abstract text in here',
+  },
+  {
+    time: '15:50',
+    title: 'Break',
+    duration: '10 min',
+  },
+  {
+    id: '13',
+    time: '16:05',
+    title: 'LIGHTNING TALKS',
+    duration: '30 min',
+    speakers: [
+      // {
+      //   name: 'Priya Wadhwa',
+      //   photo: PriyaWadhwaPhoto,
+      // },
+    ],
+    presentation: 'Abstract text in here',
+  },
+  {
+    time: '16:35',
+    title: 'Break',
+    duration: '10 min',
+  },
+  {
+    id: '14',
+    time: '16:50',
     title: 'ENDING KEYNOTE TITLE HERE',
-    duration: '??? min',
+    duration: '30 min',
     isKeynote: true,
     speakers: [
       // {
