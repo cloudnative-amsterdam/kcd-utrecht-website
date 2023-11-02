@@ -35,10 +35,15 @@ const ITEMS = [
     duration: '30 min',
   },
   {
-    id: '01',
     time: '9:30',
+    title: 'Introduction',
+    duration: '5 min',
+  },
+  {
+    id: '01',
+    time: '9:40',
     title: 'STARTING KEYNOTE TITLE HERE',
-    duration: '??? min',
+    duration: '30 min',
     isKeynote: true,
     speakers: [
       // {
@@ -49,11 +54,41 @@ const ITEMS = [
     ],
     presentation: 'INSERT KEYNOTE ABSTRACT HERE',
   },
-  // INSERT TALKS HERE
   {
-    time: '11:00',
+    time: '10:10',
+    title: 'Short break',
+    duration: '10 min',
+  },
+  {
+    id: '02',
+    time: '10:25',
+    title: 'TALK TITLE TRACK 1',
+    duration: '35 min',
+    speakers: [
+      // {
+      //   name: 'Priya Wadhwa',
+      //   photo: PriyaWadhwaPhoto,
+      // },
+    ],
+    presentation: 'Abstract text in here',
+    coincidedEvent: {
+      id: '03',
+      time: '10:25',
+      title: 'TALK TITLE TRACK 2',
+      duration: '35 min',
+      speakers: [
+        // {
+        //   name: 'Timo Salm',
+        //   photo: TimoSalmPhoto,
+        // },
+      ],
+      presentation: 'Put in\n' + 'abstract here',
+    },
+  },
+  {
+    time: '10:55',
     title: 'Morning break',
-    duration: '30 min',
+    duration: '20 min',
   },
   // INSERT TALKS HERE
   {
@@ -69,7 +104,7 @@ const ITEMS = [
   },
   // INSERT TALKS HERE
   {
-    id: '01',
+    id: '50',
     time: '17:00',
     title: 'ENDING KEYNOTE TITLE HERE',
     duration: '??? min',
