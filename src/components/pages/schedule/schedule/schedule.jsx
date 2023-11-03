@@ -651,9 +651,9 @@ const Schedule = ({ location }) => {
                 'grid grid-cols-[114px_1fr] md:grid-cols-[106px_1fr] sm:grid-cols-1',
                 {
                   'bg-primary-4': isEven,
-                  'bg-lightGreen': title === 'Welcome',
+                  'bg-lightGreen': title === 'Registration',
                   'bg-lightYellow': title === 'Lunch',
-                  'bg-lightOrange': title === 'Closing',
+                  'bg-lightOrange': title === 'Drinks / networking',
                 }
               )}
               key={index}
