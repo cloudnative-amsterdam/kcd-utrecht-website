@@ -11,7 +11,7 @@ import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 const ITEMS = [
   {
     time: '8:30',
-    title: 'Registration',
+    title: 'Welcome',
     duration: '30 min',
   },
   {
@@ -22,7 +22,7 @@ const ITEMS = [
   {
     id: '01',
     time: '9:40',
-    title: 'STARTING KEYNOTE TITLE HERE',
+    title: 'Empowering The Teams, Avoiding Micromanagement: The Balance of Leadership',
     duration: '30 min',
     isKeynote: true,
     speakers: [
@@ -42,7 +42,7 @@ const ITEMS = [
   {
     id: '02',
     time: '10:25',
-    title: 'TALK TITLE TRACK 1',
+    title: 'Not all edges are alike',
     duration: '35 min',
     speakers: [
       // {
@@ -54,7 +54,7 @@ const ITEMS = [
     coincidedEvent: {
       id: '03',
       time: '10:25',
-      title: 'TALK TITLE TRACK 2',
+      title: 'Welcome to K8s bakery!',
       duration: '35 min',
       speakers: [
         // {
@@ -73,7 +73,7 @@ const ITEMS = [
   {
     id: '04',
     time: '11:20',
-    title: 'TALK TITLE TRACK 1',
+    title: 'A Greener, Cost-Effective Cloud with Serverless WebAssembly',
     duration: '35 min',
     speakers: [
       // {
@@ -85,7 +85,7 @@ const ITEMS = [
     coincidedEvent: {
       id: '05',
       time: '11:20',
-      title: 'TALK TITLE TRACK 2',
+      title: "Deploying Kubernetes isn't merely technical",
       duration: '35 min',
       speakers: [
         // {
@@ -103,9 +103,9 @@ const ITEMS = [
   },
   {
     id: '06',
-    time: '12:05',
-    title: 'TALK TITLE TRACK 1',
-    duration: '30 min',
+    time: '12:00',
+    title: 'Cilium: divide et impera the networking stack',
+    duration: '35 min',
     speakers: [
       // {
       //   name: 'Priya Wadhwa',
@@ -115,9 +115,9 @@ const ITEMS = [
     presentation: 'Abstract text in here',
     coincidedEvent: {
       id: '07',
-      time: '12:05',
-      title: 'TALK TITLE TRACK 2',
-      duration: '30 min',
+      time: '12:00',
+      title: "Killing PET's with CPET",
+      duration: '35 min',
       speakers: [
         // {
         //   name: 'Timo Salm',
@@ -134,9 +134,9 @@ const ITEMS = [
   },
   {
     id: '08',
-    time: '13:40',
-    title: 'TALK TITLE TRACK 1',
-    duration: '30 min',
+    time: '13:35',
+    title: 'Dev to the Future - Improving Developer Experience',
+    duration: '35 min',
     speakers: [
       // {
       //   name: 'Priya Wadhwa',
@@ -146,9 +146,9 @@ const ITEMS = [
     presentation: 'Abstract text in here',
     coincidedEvent: {
       id: '09',
-      time: '13:40',
-      title: 'TALK TITLE TRACK 2',
-      duration: '30 min',
+      time: '13:35',
+      title: 'Postgres for a better k8s',
+      duration: '35 min',
       speakers: [
         // {
         //   name: 'Timo Salm',
@@ -165,9 +165,9 @@ const ITEMS = [
   },
   {
     id: '10',
-    time: '14:25',
-    title: 'TALK TITLE TRACK 1',
-    duration: '30 min',
+    time: '14:20',
+    title: 'Getting the Most Out of Service Mesh: Our Top Tips!',
+    duration: '35 min',
     speakers: [
       // {
       //   name: 'Priya Wadhwa',
@@ -177,9 +177,9 @@ const ITEMS = [
     presentation: 'Abstract text in here',
     coincidedEvent: {
       id: '11',
-      time: '14:25',
-      title: 'TALK TITLE TRACK 2',
-      duration: '30 min',
+      time: '14:20',
+      title: 'Mapping K8s migration',
+      duration: '35 min',
       speakers: [
         // {
         //   name: 'Timo Salm',
@@ -196,9 +196,9 @@ const ITEMS = [
   },
   {
     id: '12',
-    time: '15:20',
-    title: 'TALK TITLE TRACK 1',
-    duration: '30 min',
+    time: '15:15',
+    title: 'Gamified cyber security with k8s',
+    duration: '35 min',
     speakers: [
       // {
       //   name: 'Priya Wadhwa',
@@ -214,9 +214,9 @@ const ITEMS = [
   },
   {
     id: '13',
-    time: '16:05',
+    time: '16:00',
     title: 'LIGHTNING TALKS',
-    duration: '30 min',
+    duration: '35 min',
     speakers: [
       // {
       //   name: 'Priya Wadhwa',
@@ -232,9 +232,9 @@ const ITEMS = [
   },
   {
     id: '14',
-    time: '16:50',
-    title: 'ENDING KEYNOTE TITLE HERE',
-    duration: '30 min',
+    time: '16:45',
+    title: 'Closing keynote',
+    duration: '35 min',
     isKeynote: true,
     speakers: [
       {
@@ -651,7 +651,7 @@ const Schedule = ({ location }) => {
                 'grid grid-cols-[114px_1fr] md:grid-cols-[106px_1fr] sm:grid-cols-1',
                 {
                   'bg-primary-4': isEven,
-                  'bg-lightGreen': title === 'Registration',
+                  'bg-lightGreen': title === 'Welcome',
                   'bg-lightYellow': title === 'Lunch',
                   'bg-lightOrange': title === 'Drinks / networking',
                 }

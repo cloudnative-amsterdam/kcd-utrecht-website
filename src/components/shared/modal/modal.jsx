@@ -189,11 +189,16 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                   </span>
                   {speakers.length > 0 &&
                     speakers.map(({ id: speakerId, name, photo }, index) => (
-                      <Link
-                        className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 hover:text-blue-1"
-                        to="/#speaker"
-                        state={{ modalId: speakerId || id }}
+                      // <Link
+                      //   className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 hover:text-blue-1"
+                      //   to="/#speaker"
+                      //   state={{ modalId: speakerId || id }}
+                      //   key={index}
+                      // >
+                      <span
+                        id={speakerId || id}
                         key={index}
+                        className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3"
                       >
                         <img
                           className="h-7 w-7 rounded-full"
@@ -205,7 +210,8 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                         <p className="whitespace-nowrap text-sm font-medium leading-none sm:whitespace-normal">
                           {name}
                         </p>
-                      </Link>
+                      </span>
+                      // </Link>
                     ))}
                 </div>
                 <h2 className="mt-7 text-2xl font-semibold leading-tight tracking-[-0.01em] text-primary-1 sm:text-lg">
