@@ -5,22 +5,7 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
-// import AdrianPhoto from './images/adrian-reber-photo.jpg';
-// import AnnieTalvastoPhoto from './images/annie-talvasto-photo.jpg';
-// import BillPhoto from './images/bill-mulligan-photo.jpg';
-// import FilipPhoto from './images/filip-nicolic-photo.jpg';
-// import JuliusVolzPhoto from './images/julius-volz-photo.jpg';
-// import LenaPhoto from './images/lena-fuhrimann-photo.jpg';
-// import LisaFalcoPhoto from './images/lisa-falco-photo.jpg';
-// import LizRicePhoto from './images/liz-rice-photo.jpg';
-// import MaxKorbacherPhoto from './images/max-korbacher-photo.jpg';
-// import PriyaWadhwaPhoto from './images/priya-wadhwa-photo.jpg';
-// import RaphaelPhoto from './images/raphael-photo.jpg';
-// import RetoPhoto from './images/reto-lehmann-photo.jpg';
-// import RicardoRochaPhoto from './images/ricardo-rocha-photo.jpg';
-// import SebastianKisterPhoto from './images/sebastian-kister-photo.jpg';
-// import ThomasGrafPhoto from './images/thomas-graf-photo.jpg';
-// import TimoSalmPhoto from './images/timo-salm-photo.jpg';
+import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
@@ -252,11 +237,10 @@ const ITEMS = [
     duration: '30 min',
     isKeynote: true,
     speakers: [
-      // {
-      //   id: '0',
-      //   name: 'Thomas Graf',
-      //   photo: ThomasGrafPhoto,
-      // },
+      {
+        name: 'Sevi Karakulak',
+        photo: SeviKarakulakPhoto,
+      },
     ],
     presentation: 'INSERT KEYNOTE ABSTRACT HERE',
   },
