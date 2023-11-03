@@ -5,8 +5,14 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
+import JohnKeatesPhoto from './images/john-keates-photo.jpg';
+import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
+import RemySimonsPhoto from './images/remy-simons-photo.jpg';
 import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
-
+import SohanMaheshwarPhoto from './images/sohan-maheshwar-photo.jpg';
+import StefanVanGastelPhoto from './images/stefan-van-gastel-photo.jpg';
+// UserPhoto is default when no speaker picture is present
+import UserPhoto from './images/user-photo.jpg';
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
@@ -26,13 +32,20 @@ const ITEMS = [
     duration: '30 min',
     isKeynote: true,
     speakers: [
-      // {
-      //   id: '0',
-      //   name: 'Thomas Graf',
-      //   photo: ThomasGrafPhoto,
-      // },
+      {
+        name: 'Sarah Gruneisen',
+        // photo: ThomasGrafPhoto,
+      },
     ],
-    presentation: 'INSERT KEYNOTE ABSTRACT HERE',
+    presentation:
+      'In the ever-evolving realm of DevOps, challenges aren’t just technical but interpersonal. ' +
+      'My presentation delves into the stifling flames of micromanagement and the scorching impact on team members. ' +
+      'Recounting my evolution from a fiery to a wise dragon, my talk underscores the significance of self-awareness, ' +
+      'mutual respect, and open communication.<br/><br/>' +
+      'While it’s natural to perceive micromanagers as fire-breathing beasts, ' +
+      'I will reveal the heart within, advocating for understanding, dialogue, and empowerment. ' +
+      'By taming our inner dragons, managers and team members can transition from conflict to collaboration, ' +
+      'letting innovation soar.',
   },
   {
     time: '10:10',
@@ -42,13 +55,13 @@ const ITEMS = [
   {
     id: '02',
     time: '10:25',
-    title: 'Not all edges are alike',
+    title: 'Edge of Tomorrow',
     duration: '35 min',
     speakers: [
-      // {
-      //   name: 'Priya Wadhwa',
-      //   photo: PriyaWadhwaPhoto,
-      // },
+      {
+        name: 'Stefan van Gastel',
+        photo: StefanVanGastelPhoto,
+      },
     ],
     presentation: 'Abstract text in here',
     coincidedEvent: {
@@ -76,10 +89,10 @@ const ITEMS = [
     title: 'A Greener, Cost-Effective Cloud with Serverless WebAssembly',
     duration: '35 min',
     speakers: [
-      // {
-      //   name: 'Priya Wadhwa',
-      //   photo: PriyaWadhwaPhoto,
-      // },
+      {
+        name: 'Sohan Maheshwar',
+        photo: SohanMaheshwarPhoto,
+      },
     ],
     presentation: 'Abstract text in here',
     coincidedEvent: {
@@ -107,10 +120,10 @@ const ITEMS = [
     title: 'Cilium: divide et impera the networking stack',
     duration: '35 min',
     speakers: [
-      // {
-      //   name: 'Priya Wadhwa',
-      //   photo: PriyaWadhwaPhoto,
-      // },
+      {
+        name: 'Remy Simons',
+        photo: RemySimonsPhoto,
+      },
     ],
     presentation: 'Abstract text in here',
     coincidedEvent: {
@@ -181,10 +194,10 @@ const ITEMS = [
       title: 'Mapping K8s migration',
       duration: '35 min',
       speakers: [
-        // {
-        //   name: 'Timo Salm',
-        //   photo: TimoSalmPhoto,
-        // },
+        {
+          name: 'John Keates',
+          photo: JohnKeatesPhoto,
+        },
       ],
       presentation: 'Put in\n' + 'abstract here',
     },
@@ -218,10 +231,10 @@ const ITEMS = [
     title: 'LIGHTNING TALKS',
     duration: '35 min',
     speakers: [
-      // {
-      //   name: 'Priya Wadhwa',
-      //   photo: PriyaWadhwaPhoto,
-      // },
+      {
+        name: 'Marco Verleun',
+        photo: MarcoVerleunPhoto,
+      },
     ],
     presentation: 'Abstract text in here',
   },
@@ -710,7 +723,7 @@ const Schedule = ({ location }) => {
                             <figure className="flex items-center gap-x-2">
                               <img
                                 className="h-7 w-7 rounded-full"
-                                src={photo}
+                                src={photo || UserPhoto}
                                 width={28}
                                 height={28}
                                 alt={name}
