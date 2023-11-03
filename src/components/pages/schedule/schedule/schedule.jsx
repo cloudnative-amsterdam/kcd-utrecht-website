@@ -67,7 +67,16 @@ const ITEMS = [
         photo: JohnStroosnijderPhoto,
       },
     ],
-    presentation: 'Abstract text in here',
+    presentation:
+      'Not all edges are alike. The Dutch Ministry Of Defence (MoD) has a need for edge computing in some very special, ' +
+      'high demanding and constrained locations. ' +
+      'Besides modern datacenters, the MoD also requires computing power and storage on remote locations. ' +
+      'These can be in small local datacenters (aka broom closets) or abroad in (physical) containers or tents, ' +
+      'but also think of ships and vehicles that are on the move and not always connected to the network or main power grid. ' +
+      'Running edge computing on these locations is always an issue. This askes for a new approach on edge computing, ' +
+      'making it robust and secure with a minimal power consumption, ' +
+      'but still easy to use. We will share our vision and work on creating an army green tainted edge, ' +
+      'using green energy resources, mobility and modern communication methods.',
     coincidedEvent: {
       id: '03',
       time: '10:25',
@@ -83,7 +92,8 @@ const ITEMS = [
           // photo: MritunjaySharmaPhoto,
         },
       ],
-      presentation: 'Put in\n' + 'abstract here',
+      presentation:
+        'Welcome to K8s bakery! Pods, Services, Deployments & other in house products are glaring at you but what if you want a cake that’s designed for your needs & occasion? Enter Custom Resource Definition! What is a CRD manifest and how to write that? Let’s bring this imaginative world of K8s bakery to KCD Utrecht with this session. In this talk, we will guide you in creating your first CRD that will help you create the object or what we call the cake of your desire! Let us answer WHAT a CRD means, WHEN you would write one, WHY & HOW the flexibility of CRDs allows you to define & manage custom resources that align with your specific ‘cake’ i.e. application requirements. A session on CRDs with an analogy of bakery will be incomplete without talking about the icing of controllers & operators in K8s. We will see how all the pieces fit together in writing a functional CRD in an interactive demo.',
     },
   },
   {
@@ -102,7 +112,9 @@ const ITEMS = [
         photo: SohanMaheshwarPhoto,
       },
     ],
-    presentation: 'Abstract text in here',
+    presentation:
+      'Software Carbon Intensity (SCI) quantifies emissions from an application, combining operational and hardware emissions. Serverless functions reduce operational emissions by running apps on-demand, but faces cold-start delays. WebAssembly (Wasm) offers a solution to cold-start issues with near-instant startup, akin to containers but more efficiently.<br/><br/>' +
+      'Wasm modules are just as secure as containers with default sandboxing, yet they start almost instantly (in microseconds). In this session, we discuss why Wasm is the ideal & greenest unit of compute for Serverless applications and how you can get started using Serverless Wasm with Spin - an open source developer tool. We’ll demo running AI inferencing Spin applications and discuss how it also enables better GPU resource sharing. By the end, you’ll have an understanding of the characteristics that make Wasm a cost-effective and sustainable unit for a greener cloud.',
     coincidedEvent: {
       id: '05',
       time: '11:20',
@@ -114,7 +126,14 @@ const ITEMS = [
           // photo: GiuseppeGianquittoPhoto,
         },
       ],
-      presentation: 'Put in\n' + 'abstract here',
+      presentation:
+        "Deploying Kubernetes isn't merely technical; it's steering through socio-technical hurdles with often resistant stakeholders. Their resistance springs from:<br/><br/>" +
+        "- K8s's perceived complexity.<br/>" +
+        '- Hesitancy toward "trending" tech.<br/>' +
+        '- Reluctance to embrace new paradigms, risking lost expertise in traditional IT.<br/>' +
+        '- Unfamiliarity with the cloud-native model and needed architectural shifts.<br/>' +
+        "- Further complicating matters, many misjudge or downplay K8s's depth, swayed by multi-cloud allure and vendor pitches.<br/><br/>" +
+        "Drawing from my Kubernetes journey since 2016, especially in the public sector (education and research), this talk unveils these persistent challenges and our navigation strategies. It isn't just about tech, but a tech lead's voyage advocating for Kubernetes amidst varying perspectives.",
     },
   },
   {
@@ -133,7 +152,9 @@ const ITEMS = [
         photo: RemySimonsPhoto,
       },
     ],
-    presentation: 'Abstract text in here',
+    presentation:
+      'In the world of distributed computing where everything goes over the wire, securing the network is key to defending your data. However, traditional struggle to keep up with the dynamic world of cloud native environments. Faced with this dilemma, ilionx adapted Cilium to overcome these challenges.<br/><br/>' +
+      'This talk walks through our journey from using disconnected point solutions like Flannel for networking, NSG for network segmentation, and Fortinet for firewalling towards a more integrated and automated set up with just Cilium. It will cover how we implemented network policy first with Calico and then with Cilium to separate tenants and how we codified our network security to make it self service for developers. The audience will walk away understanding how Cilium can enable them to simplify their networking stack and automate security in the fast moving cloud native world.',
     coincidedEvent: {
       id: '07',
       time: '12:00',
@@ -153,7 +174,7 @@ const ITEMS = [
           // photo: BenoitSchipperPhoto,
         },
       ],
-      presentation: 'Put in\n' + 'abstract here',
+      presentation: 'Updated talk abstract to be received.',
     },
   },
   {
@@ -172,7 +193,8 @@ const ITEMS = [
         // photo: KasraAmirsarvariPhoto,
       },
     ],
-    presentation: 'Abstract text in here',
+    presentation:
+      'This talk delves into the transformative journey of modernizing developer workflows via an Internal Developer Platform (IDP) orchestrated through Kubernetes. This talk covers the intersection of Platform Engineering and Kubernetes, demonstrating how Kubernetes can serve as a runtime as well as a cloud-based development environment. With a focus on self-service capabilities, the presentation outlines how an IDP can alleviate tooling complexity, minimize time-to-value, and augment the Developer Experience, thereby leading to more efficient, high-quality software delivery.',
     coincidedEvent: {
       id: '09',
       time: '13:35',
@@ -184,7 +206,8 @@ const ITEMS = [
           // photo: MaximBurgerhoutPhoto,
         },
       ],
-      presentation: 'Put in\n' + 'abstract here',
+      presentation:
+        'The ability to run stateful applications in general, and RDMS in particular, on Kubernetes is relatively new, but brings new and exciting capabilities to developers, DBAs and devops teams alike. Think of self-service cluster creation and management, self-service backup and restore, automatic configuration of point-in-time recovery scenarios, etc. On top of that, by making Postgres clusters Kubernetes resources, you can now apply GitOps, CI/CD pipelines like Tekton and policy frameworks to your database.',
     },
   },
   {
@@ -207,7 +230,8 @@ const ITEMS = [
         // photo: ShwetaVohraPhoto,
       },
     ],
-    presentation: 'Abstract text in here',
+    presentation:
+      "Handling service topologies in Kubernetes and figuring out how they connect can be challenging, especially when you have a big list of over 2500 services to start with. In this session, we'll spill the beans on our 'oops' moments to make your journey a walk in the park! Attendees will discover how to integrate service dependencies effectively into the service mesh and ensure that Envoy performs optimally without being overwhelmed. Engineers will grasp techniques for managing services configurations. Furthermore, we'll explore how to seamlessly extend mesh behavior to gateways. Join us to unearth tips for maximizing the benefits of the Kubernetes service mesh, emphasizing Envoy's crucial role.",
     coincidedEvent: {
       id: '11',
       time: '14:20',
@@ -215,11 +239,12 @@ const ITEMS = [
       duration: '35 min',
       speakers: [
         {
-          name: 'John Keates',
-          // photo: JohnKeatesPhoto,
+          name: 'Rajalakshmi Rajamuthu',
+          // photo: RajalakshmiRajamuthuPhoto,
         },
       ],
-      presentation: 'Put in\n' + 'abstract here',
+      presentation:
+        "As organizations set sail on their Kubernetes migration journey, they encounter a new world of opportunities and challenges.Embarking on a journey towards Kubernetes migration can always be a formidable task. In this paper, will guide you through the process of mapping your migration path, helping you make informed decisions that align with your organizatio's goals and resources. Drawing from real-world experiences and best practices, our paper will provide a comprehensive roadmap for successfully navigating the Kubernetes migration landscape.",
     },
   },
   {
@@ -238,7 +263,11 @@ const ITEMS = [
         // photo: PeterVanEijkPhoto,
       },
     ],
-    presentation: 'Abstract text in here',
+    presentation:
+      'The JointCyberRange is a facility for gamified cyber security education. It allows to create CTF (Capture the Flag) events and courses. Think of it as a CyberRange as a Service, as it can run multiple independent event tenants. We have hosted several events on it, including the Dutch national ‘Challenge the Cyber’, with 100+ participants.<br/><br/>' +
+      'Initiated by the Haagsche Hogeschool and the Hogeschool Utrecht, it was developed by several student teams. ' +
+      'It runs on Kubernetes to provide scalability, in particular for container-based challenges. ArgoCD is used for GitOps. We’ll discuss the good, the bad and the ugly of our approach.<br/><br/>' +
+      'Topics we’d discuss include architectural choices, tools, migration issues, challenges of working with student teams, mistakes that we made, production war stories, stuff that we are proud of, and so on.',
   },
   {
     time: '15:50',
@@ -248,7 +277,7 @@ const ITEMS = [
   {
     id: '13',
     time: '16:00',
-    title: 'LIGHTNING TALKS',
+    title: '⚡️ Lightning Talks ⚡️',
     duration: '35 min',
     speakers: [
       {
@@ -264,7 +293,11 @@ const ITEMS = [
         // photo: SerdarKalayciPhoto,
       },
     ],
-    presentation: 'Abstract text in here',
+    presentation:
+      'Short and interesting talks:<br/>' +
+      '⚡ Find CVEs with ease<br/>' +
+      '⚡ Docker & Kubernetes Unboxed<br/>' +
+      '⚡ 12 factor k8s',
   },
   {
     time: '16:35',
