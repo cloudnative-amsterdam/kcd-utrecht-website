@@ -196,7 +196,7 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                       //   key={index}
                       // >
                       <span
-                        id={speakerId || id}
+                        id={`speaker-${speakerId || id}`}
                         key={index}
                         className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3"
                       >
