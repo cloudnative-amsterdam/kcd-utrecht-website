@@ -8,6 +8,7 @@ import Modal from 'components/shared/modal';
 import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
 import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
 import RemySimonsPhoto from './images/remy-simons-photo.jpg';
+import SarahGruneisenPhoto from './images/sarah-gruneisen-photo.jpg';
 import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 import SohanMaheshwarPhoto from './images/sohan-maheshwar-photo.jpg';
 import StefanVanGastelPhoto from './images/stefan-van-gastel-photo.jpg';
@@ -34,7 +35,7 @@ const ITEMS = [
     speakers: [
       {
         name: 'Sarah Gruneisen',
-        // photo: SarahGruneisenPhoto,
+        photo: SarahGruneisenPhoto,
       },
     ],
     presentation:
