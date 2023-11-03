@@ -109,10 +109,10 @@ const ITEMS = [
       title: "Deploying Kubernetes isn't merely technical",
       duration: '35 min',
       speakers: [
-        // {
-        //   name: 'Timo Salm',
-        //   photo: TimoSalmPhoto,
-        // },
+        {
+          name: 'Giuseppe Gianquitto',
+          // photo: GiuseppeGianquittoPhoto,
+        },
       ],
       presentation: 'Put in\n' + 'abstract here',
     },
@@ -140,10 +140,18 @@ const ITEMS = [
       title: "Killing PET's with CPET",
       duration: '35 min',
       speakers: [
-        // {
-        //   name: 'Timo Salm',
-        //   photo: TimoSalmPhoto,
-        // },
+        {
+          name: 'Jan Willem',
+          // photo: JanWillemPhoto,
+        },
+        {
+          name: 'Sebastiaan Mannem',
+          // photo: SebastiaanMannemPhoto,
+        },
+        {
+          name: 'Benoit Schipper',
+          // photo: BenoitSchipperPhoto,
+        },
       ],
       presentation: 'Put in\n' + 'abstract here',
     },
@@ -159,10 +167,10 @@ const ITEMS = [
     title: 'Dev to the Future - Improving Developer Experience',
     duration: '35 min',
     speakers: [
-      // {
-      //   name: 'Priya Wadhwa',
-      //   photo: PriyaWadhwaPhoto,
-      // },
+      {
+        name: 'Kasra Amirsarvari',
+        // photo: KasraAmirsarvariPhoto,
+      },
     ],
     presentation: 'Abstract text in here',
     coincidedEvent: {
@@ -171,10 +179,10 @@ const ITEMS = [
       title: 'Postgres for a better k8s',
       duration: '35 min',
       speakers: [
-        // {
-        //   name: 'Timo Salm',
-        //   photo: TimoSalmPhoto,
-        // },
+        {
+          name: 'Maxim Burgerhout',
+          // photo: MaximBurgerhoutPhoto,
+        },
       ],
       presentation: 'Put in\n' + 'abstract here',
     },
@@ -190,10 +198,14 @@ const ITEMS = [
     title: 'Getting the Most Out of Service Mesh: Our Top Tips!',
     duration: '35 min',
     speakers: [
-      // {
-      //   name: 'Priya Wadhwa',
-      //   photo: PriyaWadhwaPhoto,
-      // },
+      {
+        name: 'Andrea Soldino',
+        // photo: AndreaSoldinoPhoto,
+      },
+      {
+        name: 'Shweta Vohra',
+        // photo: ShwetaVohraPhoto,
+      },
     ],
     presentation: 'Abstract text in here',
     coincidedEvent: {
@@ -221,10 +233,10 @@ const ITEMS = [
     title: 'Gamified cyber security with k8s',
     duration: '35 min',
     speakers: [
-      // {
-      //   name: 'Priya Wadhwa',
-      //   photo: PriyaWadhwaPhoto,
-      // },
+      {
+        name: 'Peter van Eijk',
+        // photo: PeterVanEijkPhoto,
+      },
     ],
     presentation: 'Abstract text in here',
   },
@@ -242,6 +254,14 @@ const ITEMS = [
       {
         name: 'Marco Verleun',
         photo: MarcoVerleunPhoto,
+      },
+      {
+        name: 'Louëlla Creemers',
+        // photo: LouellaCreemersPhoto,
+      },
+      {
+        name: 'Serdar Kalaycı',
+        // photo: SerdarKalayciPhoto,
       },
     ],
     presentation: 'Abstract text in here',
