@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
-import JohnKeatesPhoto from './images/john-keates-photo.jpg';
+import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
 import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
 import RemySimonsPhoto from './images/remy-simons-photo.jpg';
 import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
@@ -34,7 +34,7 @@ const ITEMS = [
     speakers: [
       {
         name: 'Sarah Gruneisen',
-        // photo: ThomasGrafPhoto,
+        // photo: SarahGruneisenPhoto,
       },
     ],
     presentation:
@@ -62,6 +62,10 @@ const ITEMS = [
         name: 'Stefan van Gastel',
         photo: StefanVanGastelPhoto,
       },
+      {
+        name: 'John Stroosnijder',
+        photo: JohnStroosnijderPhoto,
+      },
     ],
     presentation: 'Abstract text in here',
     coincidedEvent: {
@@ -70,10 +74,14 @@ const ITEMS = [
       title: 'Welcome to K8s bakery!',
       duration: '35 min',
       speakers: [
-        // {
-        //   name: 'Timo Salm',
-        //   photo: TimoSalmPhoto,
-        // },
+        {
+          name: 'Anushka Mittal',
+          // photo: AnushkaMittalPhoto,
+        },
+        {
+          name: 'Mritunjay Sharma',
+          // photo: MritunjaySharmaPhoto,
+        },
       ],
       presentation: 'Put in\n' + 'abstract here',
     },
@@ -196,7 +204,7 @@ const ITEMS = [
       speakers: [
         {
           name: 'John Keates',
-          photo: JohnKeatesPhoto,
+          // photo: JohnKeatesPhoto,
         },
       ],
       presentation: 'Put in\n' + 'abstract here',
@@ -780,7 +788,7 @@ const Schedule = ({ location }) => {
                               <figure className="flex items-center gap-x-2">
                                 <img
                                   className="h-7 w-7 rounded-full"
-                                  src={photo}
+                                  src={photo || UserPhoto}
                                   width={28}
                                   height={28}
                                   alt={`${name} photo`}

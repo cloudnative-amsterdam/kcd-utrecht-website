@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import React, { useCallback, useEffect, useId, useState } from 'react';
 
 import ArrowRight from 'components/pages/archive/gallery/svg/arrow-right.inline.svg';
+import UserPhoto from 'components/pages/schedule/schedule/images/user-photo.jpg';
 import CloseIcon from 'icons/close.inline.svg';
 import CommunityIcon from 'icons/cncf-icon.inline.svg';
 import GithubIcon from 'icons/github-icon.inline.svg';
@@ -202,7 +203,7 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                       >
                         <img
                           className="h-7 w-7 rounded-full"
-                          src={photo}
+                          src={photo || UserPhoto}
                           width={28}
                           alt={name}
                           loading="lazy"
