@@ -119,7 +119,7 @@ const ITEMS = [
     coincidedEvent: {
       id: '05',
       time: '11:20',
-      title: "Deploying Kubernetes isn't merely technical",
+      title: 'Deploying Kubernetes in hostile environments',
       duration: '35 min',
       speakers: [
         {
