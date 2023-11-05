@@ -139,7 +139,7 @@ const ITEMS = [
   },
   {
     time: '11:50',
-    title: 'Break',
+    title: 'Short break',
     duration: '10 min',
   },
   {
@@ -214,7 +214,7 @@ const ITEMS = [
   },
   {
     time: '14:10',
-    title: 'Break',
+    title: 'Short break',
     duration: '10 min',
   },
   {
@@ -287,7 +287,7 @@ const ITEMS = [
   },
   {
     time: '15:50',
-    title: 'Break',
+    title: 'Short break',
     duration: '10 min',
   },
   {
@@ -317,7 +317,7 @@ const ITEMS = [
   },
   {
     time: '16:35',
-    title: 'Break',
+    title: 'Short break',
     duration: '10 min',
   },
   {
