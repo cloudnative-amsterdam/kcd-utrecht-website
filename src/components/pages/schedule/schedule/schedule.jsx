@@ -186,7 +186,7 @@ const ITEMS = [
   {
     id: '08',
     time: '13:35',
-    title: 'Migrating k8s',
+    title: 'Migration to Kubernetes at Wehkamp',
     duration: '35 min',
     speakers: [
       {
@@ -244,9 +244,13 @@ const ITEMS = [
           name: 'Rajalakshmi Rajamuthu',
           // photo: RajalakshmiRajamuthuPhoto,
         },
+        {
+          name: 'Nirav Bhadradiya',
+          // photo: NiravBhadradiyaPhoto,
+        },
       ],
       presentation:
-        "As organizations set sail on their Kubernetes migration journey, they encounter a new world of opportunities and challenges.Embarking on a journey towards Kubernetes migration can always be a formidable task. In this paper, will guide you through the process of mapping your migration path, helping you make informed decisions that align with your organizatio's goals and resources. Drawing from real-world experiences and best practices, our paper will provide a comprehensive roadmap for successfully navigating the Kubernetes migration landscape.",
+        "As organizations set sail on their Kubernetes migration journey, they encounter a new world of opportunities and challenges.Embarking on a journey towards Kubernetes migration can always be a formidable task. In this paper, will guide you through the process of mapping your migration path, helping you make informed decisions that align with your organization's goals and resources. Drawing from real-world experiences and best practices, our paper will provide a comprehensive roadmap for successfully navigating the Kubernetes migration landscape.",
     },
   },
   {
