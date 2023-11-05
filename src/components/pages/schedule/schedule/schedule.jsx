@@ -186,20 +186,21 @@ const ITEMS = [
   {
     id: '08',
     time: '13:35',
-    title: 'Dev to the Future - Improving Developer Experience',
+    title: 'Migrating k8s',
     duration: '35 min',
     speakers: [
       {
-        name: 'Kasra Amirsarvari',
-        // photo: KasraAmirsarvariPhoto,
+        name: 'John Keates',
+        // photo: JohnKeatesPhoto,
       },
     ],
     presentation:
-      'This talk delves into the transformative journey of modernizing developer workflows via an Internal Developer Platform (IDP) orchestrated through Kubernetes. This talk covers the intersection of Platform Engineering and Kubernetes, demonstrating how Kubernetes can serve as a runtime as well as a cloud-based development environment. With a focus on self-service capabilities, the presentation outlines how an IDP can alleviate tooling complexity, minimize time-to-value, and augment the Developer Experience, thereby leading to more efficient, high-quality software delivery.',
+      'During our journey of migrating from a homegrown microservices platform to a Kubernetes and other CNCF projects powered setup, we encountered a few scenarios that required us to evolve from separate individual clusters, to multi-cluster and then all the way to istio-multi-mesh. Using ArgoCD, KEDA, Istio and a few other projects we managed to deliver a setup that empowers developers, lowered our cost, increased the adoption of new features while keeping everything running.<br/><br/>' +
+      'This sounds like an impossible story where somehow everything gets better, which is usually not how such huge a change turns out. In this talk, we will present where we came from, what components we cobbled together and how many attempts it took to actually migrate a live system.',
     coincidedEvent: {
       id: '09',
       time: '13:35',
-      title: 'Postgres for a better k8s',
+      title: 'Postgres on Kubernetes: the time is now!',
       duration: '35 min',
       speakers: [
         {
@@ -256,7 +257,7 @@ const ITEMS = [
   {
     id: '12',
     time: '15:15',
-    title: 'Gamified cyber security with k8s',
+    title: 'Our journey in building a gamified cyber security platform with k8s',
     duration: '35 min',
     speakers: [
       {
@@ -269,6 +270,20 @@ const ITEMS = [
       'Initiated by the Haagsche Hogeschool and the Hogeschool Utrecht, it was developed by several student teams. ' +
       'It runs on Kubernetes to provide scalability, in particular for container-based challenges. ArgoCD is used for GitOps. We’ll discuss the good, the bad and the ugly of our approach.<br/><br/>' +
       'Topics we’d discuss include architectural choices, tools, migration issues, challenges of working with student teams, mistakes that we made, production war stories, stuff that we are proud of, and so on.',
+    coincidedEvent: {
+      id: '13',
+      time: '15:15',
+      title: 'Dev to the Future - Improving Developer Experience',
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Kasra Amirsarvari',
+          // photo: KasraAmirsarvariPhoto,
+        },
+      ],
+      presentation:
+        'This talk delves into the transformative journey of modernizing developer workflows via an Internal Developer Platform (IDP) orchestrated through Kubernetes. This talk covers the intersection of Platform Engineering and Kubernetes, demonstrating how Kubernetes can serve as a runtime as well as a cloud-based development environment. With a focus on self-service capabilities, the presentation outlines how an IDP can alleviate tooling complexity, minimize time-to-value, and augment the Developer Experience, thereby leading to more efficient, high-quality software delivery.',
+    },
   },
   {
     time: '15:50',
@@ -276,7 +291,7 @@ const ITEMS = [
     duration: '10 min',
   },
   {
-    id: '13',
+    id: '14',
     time: '16:00',
     title: '⚡️ Lightning Talks ⚡️',
     duration: '35 min',
@@ -298,7 +313,7 @@ const ITEMS = [
       'Short and interesting talks:<br/>' +
       '⚡ Find CVEs with ease<br/>' +
       '⚡ Docker & Kubernetes Unboxed<br/>' +
-      '⚡ 12 factor k8s',
+      '⚡ Back to basics: 12 Factor App in Cloud Native Era',
   },
   {
     time: '16:35',
@@ -306,7 +321,7 @@ const ITEMS = [
     duration: '10 min',
   },
   {
-    id: '14',
+    id: '15',
     time: '16:45',
     title: 'Closing keynote',
     duration: '35 min',
