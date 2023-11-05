@@ -5,11 +5,23 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
+import AndreaSoldinoPhoto from './images/andrea-soldino-photo.jpg';
+import BenoitSchipperPhoto from './images/benoit-schipper-photo.jpg';
+import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto-photo.jpg';
+import JanWillemPhoto from './images/jan-willem-photo.jpg';
 import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
+import LouellaCreemersPhoto from './images/louella-creemers-photo.jpg';
 import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
+import MaximBurgerhoutPhoto from './images/maxim-burgerhout-photo.jpg';
+import NiravBhadradiyaPhoto from './images/nirav-bhadradiya-photo.jpg';
+import PeterVanEijkPhoto from './images/peter-van-eijk-photo.jpg';
+import RajalakshmiRajamuthuPhoto from './images/rajalakshmi-rajamuthu-photo.jpg';
 import RemySimonsPhoto from './images/remy-simons-photo.jpg';
 import SarahGruneisenPhoto from './images/sarah-gruneisen-photo.jpg';
+import SebastiaanMannemPhoto from './images/sebastiaan-mannem-photo.jpg';
+import SerdarKalayciPhoto from './images/serdar-kalayci-photo.jpg';
 import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
+import ShwetaVohraPhoto from './images/shweta-vohra-photo.jpg';
 import SohanMaheshwarPhoto from './images/sohan-maheshwar-photo.jpg';
 import StefanVanGastelPhoto from './images/stefan-van-gastel-photo.jpg';
 // UserPhoto is default when no speaker picture is present
@@ -124,7 +136,7 @@ const ITEMS = [
       speakers: [
         {
           name: 'Giuseppe Gianquitto',
-          // photo: GiuseppeGianquittoPhoto,
+          photo: GiuseppeGianquittoPhoto,
         },
       ],
       presentation:
@@ -164,15 +176,15 @@ const ITEMS = [
       speakers: [
         {
           name: 'Jan Willem',
-          // photo: JanWillemPhoto,
+          photo: JanWillemPhoto,
         },
         {
           name: 'Sebastiaan Mannem',
-          // photo: SebastiaanMannemPhoto,
+          photo: SebastiaanMannemPhoto,
         },
         {
           name: 'Benoit Schipper',
-          // photo: BenoitSchipperPhoto,
+          photo: BenoitSchipperPhoto,
         },
       ],
       presentation: 'Updated talk abstract to be received.',
@@ -205,7 +217,7 @@ const ITEMS = [
       speakers: [
         {
           name: 'Maxim Burgerhout',
-          // photo: MaximBurgerhoutPhoto,
+          photo: MaximBurgerhoutPhoto,
         },
       ],
       presentation:
@@ -225,11 +237,11 @@ const ITEMS = [
     speakers: [
       {
         name: 'Andrea Soldino',
-        // photo: AndreaSoldinoPhoto,
+        photo: AndreaSoldinoPhoto,
       },
       {
         name: 'Shweta Vohra',
-        // photo: ShwetaVohraPhoto,
+        photo: ShwetaVohraPhoto,
       },
     ],
     presentation:
@@ -242,11 +254,11 @@ const ITEMS = [
       speakers: [
         {
           name: 'Rajalakshmi Rajamuthu',
-          // photo: RajalakshmiRajamuthuPhoto,
+          photo: RajalakshmiRajamuthuPhoto,
         },
         {
           name: 'Nirav Bhadradiya',
-          // photo: NiravBhadradiyaPhoto,
+          photo: NiravBhadradiyaPhoto,
         },
       ],
       presentation:
@@ -266,7 +278,7 @@ const ITEMS = [
     speakers: [
       {
         name: 'Peter van Eijk',
-        // photo: PeterVanEijkPhoto,
+        photo: PeterVanEijkPhoto,
       },
     ],
     presentation:
@@ -306,11 +318,11 @@ const ITEMS = [
       },
       {
         name: 'Louëlla Creemers',
-        // photo: LouellaCreemersPhoto,
+        photo: LouellaCreemersPhoto,
       },
       {
         name: 'Serdar Kalaycı',
-        // photo: SerdarKalayciPhoto,
+        photo: SerdarKalayciPhoto,
       },
     ],
     presentation:
