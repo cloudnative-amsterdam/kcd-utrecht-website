@@ -5,384 +5,344 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
-// import AdrianPhoto from './images/adrian-reber-photo.jpg';
-// import AnnieTalvastoPhoto from './images/annie-talvasto-photo.jpg';
-// import BillPhoto from './images/bill-mulligan-photo.jpg';
-// import FilipPhoto from './images/filip-nicolic-photo.jpg';
-// import JuliusVolzPhoto from './images/julius-volz-photo.jpg';
-// import LenaPhoto from './images/lena-fuhrimann-photo.jpg';
-// import LisaFalcoPhoto from './images/lisa-falco-photo.jpg';
-// import LizRicePhoto from './images/liz-rice-photo.jpg';
-// import MaxKorbacherPhoto from './images/max-korbacher-photo.jpg';
-// import PriyaWadhwaPhoto from './images/priya-wadhwa-photo.jpg';
-// import RaphaelPhoto from './images/raphael-photo.jpg';
-// import RetoPhoto from './images/reto-lehmann-photo.jpg';
-// import RicardoRochaPhoto from './images/ricardo-rocha-photo.jpg';
-// import SebastianKisterPhoto from './images/sebastian-kister-photo.jpg';
-// import ThomasGrafPhoto from './images/thomas-graf-photo.jpg';
-// import TimoSalmPhoto from './images/timo-salm-photo.jpg';
-
+import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
+import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
+import RemySimonsPhoto from './images/remy-simons-photo.jpg';
+import SarahGruneisenPhoto from './images/sarah-gruneisen-photo.jpg';
+import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
+import SohanMaheshwarPhoto from './images/sohan-maheshwar-photo.jpg';
+import StefanVanGastelPhoto from './images/stefan-van-gastel-photo.jpg';
+// UserPhoto is default when no speaker picture is present
+import UserPhoto from './images/user-photo.jpg';
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
     time: '8:30',
-    title: 'To be announced',
-    duration: '9 hours 30 min',
+    title: 'Welcome',
+    duration: '30 min',
   },
-  // {
-  //   time: '8:00',
-  //   title: 'Registration',
-  //   duration: '45 min',
-  // },
-  // {
-  //   time: '8:45',
-  //   title: 'Welcome',
-  //   duration: '15 min',
-  // },
-  // {
-  //   id: '01',
-  //   time: '9:00',
-  //   title: 'Cilium Mesh - How to Connect Kubernetes with Legacy VM and Server Infrastructure',
-  //   duration: '30 min',
-  //   isKeynote: true,
-  //   speakers: [
-  //     {
-  //       id: '0',
-  //       name: 'Thomas Graf',
-  //       photo: ThomasGrafPhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     'Kubernetes has taken the industry by storm and has become the standard platform for new workloads. It is ideal for containerized workloads. However, a majority of workloads will remain where they are for another while, running on VMs or physical servers in either public or private cloud. How do we connect the new world of Kubernetes consisting of services, identities and CI/CD with the existing world of VMs, servers, and existing network infrastructure?\n' +
-  //     'In this session, we will look into the brand new Cilium Mesh layer. Cilium Mesh is a new universal networking layer to connect workloads and machines across cloud, on-prem, and edge. It consists of a Kubernetes networking component (CNI), a multi-cluster connectivity plane (Cluster Mesh), and a transit gateway to connect with VMs and servers in existing networks.',
-  // },
-  // {
-  //   time: '9:30',
-  //   title: 'Change tracks, Short Break',
-  //   duration: '15 min',
-  // },
-  // {
-  //   id: '5',
-  //   time: '9:45',
-  //   title: 'The state of Green Washing - or how to build sustainable systems with Kubernetes ',
-  //   duration: '30 min',
-  //   speakers: [
-  //     {
-  //       name: 'Max Körbächer',
-  //       photo: MaxKorbacherPhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     'Kubernetes is not the answer to everything, but where it is, it is a great companion to designing systems and putting environmental sustainability into your mind. But being eco-friendly invites people to greenwash their intentions, so let us start the story from the end and clarify some myths. Saving money on infrastructure may reduce your Carbon impact, but we can do more. In this presentation, we will look at what is currently possible, what are the recent developments and what we need in the future to create a carbon-aware system landscape. You will learn how designing system architectures for eco-friendliness, will have a sustainable impact, in many ways.',
-  //   coincidedEvent: {
-  //     id: '11',
-  //     time: '9:45',
-  //     title: 'Forensic container checkpointing and analysis',
-  //     duration: '30 min',
-  //     speakers: [
-  //       {
-  //         name: 'Adrian Reber',
-  //         photo: AdrianPhoto,
-  //       },
-  //     ],
-  //     presentation:
-  //       'With the introduction of "Forensic Container Checkpointing" in Kubernetes 1.25 it is possible to checkpoint\n' +
-  //       'containers. The ability to checkpoint containers opens up many new use cases. Containers can be migrated\n' +
-  //       'without loosing the state of the container, fast startup from existing checkpoints, using spot instances more\n' +
-  //       'effective. The primary use case, based on the title of the Kubernetes enhancement proposal, is the forensic\n' +
-  //       'analysis of the checkpointed containers.\n' +
-  //       '\n' +
-  //       'In this session I want to introduce the different possible use cases of "Forensic Container Checkpointing" with a\n' +
-  //       'focus on how to perform forensic analysis on the checkpointed containers. The presented use cases and\n' +
-  //       'especially the forensic analysis will be done as a live demo giving the audience a hands on experience.',
-  //   },
-  // },
-  // {
-  //   time: '10:15',
-  //   title: 'Coffee Break',
-  //   duration: '30 min',
-  // },
-  // {
-  //   id: '4',
-  //   time: '10:45',
-  //   title: 'When Things Get Big: Scaling Cloud Native Workloads and Software Distribution',
-  //   duration: '30 min',
-  //   speakers: [
-  //     {
-  //       name: 'Ricardo Rocha',
-  //       photo: RicardoRochaPhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     'The move to containers has significantly improved the way services and workloads are deployed and managed in large scale computing infrastructures. It also brought new challenges that can be handled with intrusive changes in the workflows or hidden in the stack. This session will focus on one of those challenges and go in detail on how you can efficiently distribute very large software packages across thousands of nodes for your batch, HPC or ML workloads.',
-  //   coincidedEvent: {
-  //     id: '12',
-  //     time: '10:45',
-  //     title: 'Demystifying eBPF - eBPF Firewall from scratch',
-  //     duration: '30 min',
-  //     speakers: [
-  //       {
-  //         name: 'Filip Nicolic',
-  //         photo: FilipPhoto,
-  //       },
-  //     ],
-  //     presentation:
-  //       'eBPF has emerged as a powerful technology for extending the Linux kernel, enabling users to safely and\n' +
-  //       'efficiently run custom code within the kernel. One of the most popular applications of eBPF is in the realm of\n' +
-  //       'networking, where it is used to implement high-performance firewalls and other security-related functionality.\n' +
-  //       '\n' +
-  //       'eBPF is becoming increasingly popular in the cloud-native ecosystem, with many CNCF projects utilizing its\n' +
-  //       'capabilities, including Cilium, Calico, and Pixie to name a few.\n' +
-  //       '\n' +
-  //       'This talk aims to demystify eBPF and demonstrate how it can be used to build a firewall from scratch. By\n' +
-  //       'highlighting core concepts of eBPF, attendees can better understand how it is being used in real-world scenarios,\n' +
-  //       'by various CNCF projects and how it can be applied to their own use cases.',
-  //   },
-  // },
-  // {
-  //   time: '11:15',
-  //   title: 'Change tracks, Short Break',
-  //   duration: '15 min',
-  // },
-  // {
-  //   id: '7',
-  //   time: '11:30',
-  //   title: 'Responsible AI: The Key to Ethical, Safe and Inclusive Software Development',
-  //   duration: '30 min',
-  //   speakers: [
-  //     {
-  //       name: 'Lisa Falco',
-  //       photo: LisaFalcoPhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     'The development of artificial intelligence (AI) has the potential to \n' +
-  //     'revolutionize many aspects of society, but it also poses significant ethical \n' +
-  //     'and societal challenges. Responsible AI refers to the development and use\n' +
-  //     'of AI in a manner that is ethical, transparent, and accountable, and is \n' +
-  //     'crucial to ensure that the potential benefits of AI are realized while \n' +
-  //     'minimizing negative consequences.\n' +
-  //     'In her talk, Lisa Falco will present frameworks and advice to develop \n' +
-  //     'ethical and interpretable AI. The frameworks are based on a long \n' +
-  //     'experience of developing machine learning applications within the \n' +
-  //     'medically regulated field. They cover multiple layers of the development \n' +
-  //     'process - the data, the model, and the human interaction. These are \n' +
-  //     'hands-on frameworks that clearly indicate which considerations are \n' +
-  //     'needed at every phase of the implementation and distributes roles and \n' +
-  //     'responsibilities. \n' +
-  //     'The principles and practices of responsible AI can be extended to the \n' +
-  //     'development of software in general. By placing a focus on ethics, \n' +
-  //     'transparency, and accountability, software development can be done in a \n' +
-  //     'way that is more inclusive and beneficial for society, and that minimizes \n' +
-  //     'negative consequences. Additionally, considering issues such as fairness, \n' +
-  //     'bias, privacy, security, and transparency in the software development \n' +
-  //     'process can help ensure that the software is safe and secure to use.',
-  //   coincidedEvent: {
-  //     id: '3',
-  //     time: '11:30',
-  //     title: 'What Anime Taught Me About K8s & Tech Careers',
-  //     duration: '30 min',
-  //     speakers: [
-  //       {
-  //         name: 'Annie Talvasto',
-  //         photo: AnnieTalvastoPhoto,
-  //       },
-  //     ],
-  //     presentation:
-  //       'From One piece and Naruto to Neon Genesis Evangelion and DragonBall, Japanese animation is a cultural phenomena. This session will take you through both the landscape of anime and Kubernetes development, with helpful beginner tips to get you started on your cloud native journey. The session will also cover what the hero’s of East blue and Planet 4032-877 can tech us about career development tech world. Importance of perseverance, inclusion & diversity as well as always having a snack at hand - come and learn how anime can your boost you Kubernetes and tech career to next level!\n',
-  //   },
-  // },
-  // {
-  //   time: '12:00',
-  //   title: 'Lunch',
-  //   duration: '1h 30min',
-  // },
-  // {
-  //   id: '10',
-  //   time: '13:30',
-  //   title: 'Buzzing Across the Cloud Native Landscape with eBPF',
-  //   duration: '30 min',
-  //   speakers: [
-  //     {
-  //       name: 'Bill Mulligan',
-  //       photo: BillPhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     'The buzz around eBPF in cloud native is growing quickly and it can be hard to know where to start or how to keep\n' +
-  //     'up. In this talk, Bill will trace how he got into eBPF, explore where eBPF fits on the cloud native landscape, and\n' +
-  //     'teach others how to dive into the hive of activity around eBPF.\n' +
-  //     '\n\n\n' +
-  //     'People just beginning with eBPF will learn how eBPF makes it possible to have efficient networking, observability\n' +
-  //     'without instrumentation, effortless tracing, and real-time security (among other things). Those already familiar with\n' +
-  //     'eBPF will get an overview of the eBPF landscape and learn about many eBPF applications on the cloud native\n' +
-  //     'landscape that allow them to harness the power without needing to dive into the bytecode. The audience will walk\n' +
-  //     'away with an understanding of the buzz around eBPF and knowledge of tools that may solve some of their\n' +
-  //     'problems in networking, observability, and security.',
-  //   coincidedEvent: {
-  //     id: '14',
-  //     time: '13:30',
-  //     title: 'Streamlined Troubleshooting in Kubernetes',
-  //     duration: '30 min',
-  //     speakers: [
-  //       {
-  //         name: 'Lena Fuhrimann',
-  //         photo: LenaPhoto,
-  //       },
-  //     ],
-  //     presentation:
-  //       'In this talk, we will highlight different methods to make debugging and troubleshooting in Kubernetes more streamlined and organized. People tend to mostly make the same mistakes and run into errors others have already dealt with. There are different methodologies and tools that help us to benefit from that and to more easily find where the problem lies when something goes wrong by adhering to clear solving strategies and automation tools.\n' +
-  //       '\n' +
-  //       'We will go through some of these techniques and see the respective open source tools in action. Live coding\n' +
-  //       'included!',
-  //   },
-  // },
-  // {
-  //   time: '14:00',
-  //   title: 'Change tracks, Short Break',
-  //   duration: '15 min',
-  // },
-  // {
-  //   id: '2',
-  //   time: '14:15',
-  //   title: 'Native Histograms in Prometheus: A Better Histogram Experience for Everyone',
-  //   duration: '30 min',
-  //   speakers: [
-  //     {
-  //       name: 'Julius Volz',
-  //       photo: JuliusVolzPhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     'Histograms are crucial for anyone who wants to track service latency and other numeric value distributions in Prometheus. However, the existing "legacy" histograms in Prometheus come with a number of painful drawbacks: they require manual and static bucket configuration, generate a separate time series for each configured histogram bucket, and thus require you to make hard tradeoffs between a histogram\'s resolution and cost.\n' +
-  //     '\n' +
-  //     'In this talk, Prometheus co-founder Julius Volz will present a new "native" histogram metric type that is currently being added to Prometheus. These native histograms allow you to track value distributions in higher detail at a significantly lower storage and processing cost, while also reducing the manual bucket configuration effort. Julius will explain how native histograms work, how they achieve these key benefits, and how you can use them in Prometheus today in an experimental fashion.',
-  //   coincidedEvent: {
-  //     id: '9',
-  //     time: '14:15',
-  //     title: 'Tales of Serverless - a story about building scalable applications',
-  //     duration: '30 min',
-  //     speakers: [
-  //       {
-  //         name: 'Reto Lehmann',
-  //         photo: RetoPhoto,
-  //       },
-  //     ],
-  //     presentation:
-  //       'In this talk Reto is going to tell a story about building Scalable Serverless cloud-native Applications. Using the magic of the Knative serverless platform, you are going to experience applications that are going to appear and\n' +
-  //       "disappear. We'll wander the foreign lands of the Serverless ecosystem, guided by fairies, conquering mythical beings and unimaginable challenges. \n" +
-  //       "Together, we'll get to know the mechanics and inner workings of this magical world. Hopefully, by the end of this talk, we'll be able to lift the spell and enchantments to see and understand the mechanics behind the curtains.\n" +
-  //       '\n' +
-  //       'Whether you are a brave developer-knight, a mighty operator-king or simply an interested serverless-bard, this presentation should not be scaled-to-zero.',
-  //   },
-  // },
-  // {
-  //   time: '14:45',
-  //   title: 'Coffee Break',
-  //   duration: '30 min',
-  // },
-  // {
-  //   id: '6',
-  //   time: '15:15',
-  //   title: 'Securing your Software Supply Chain on Kubernetes with Sigstore',
-  //   duration: '30 min',
-  //   speakers: [
-  //     {
-  //       name: 'Priya Wadhwa',
-  //       photo: PriyaWadhwaPhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     'How secure are the images running in your Kubernetes cluster right now? If you don’t know, then this talk is for you! In this talk, Priya Wadhwa will discuss how to determine the composition and vulnerability risk of your images. She’ll cover how to secure your images with easy container signing through Sigstore, and how to enforce policies against your images in your Kubernetes cluster with the Sigstore policy-controller. This talk will demo how to set this up while diving in to the SLSA principles of software supply chain security and how they can be applied to secure a build pipeline. \n',
-  //   coincidedEvent: {
-  //     id: '13',
-  //     time: '15:15',
-  //     title: 'Closing the Developer Experience Gap of your Container Platforms',
-  //     duration: '30 min',
-  //     speakers: [
-  //       {
-  //         name: 'Timo Salm',
-  //         photo: TimoSalmPhoto,
-  //       },
-  //     ],
-  //     presentation:
-  //       'Due to the lack of user focus, many container platforms have a big developer experience gap.\n' +
-  //       "That's not only because building a Kubernetes platform is complex but also because deploying applications on\n" +
-  //       'Kubernetes requires expertise in many Container and Kubernetes concepts. And once developers learn them,\n' +
-  //       'they still must spend a lot of time maintaining containers, writing YAML templates, and orchestrating many moving\n' +
-  //       'Kubernetes parts.\n' +
-  //       'Like in the days when the Waterfall model was the standard for software development, developers today shouldn’t\n' +
-  //       'have to care where and how their applications run and focus on adding business value by implementing new\n' +
-  //       'features.\n' +
-  //       'In this session, we will explore some of the powerful open-source technologies available within the Kubernetes\n' +
-  //       'ecosystem to close the developer experience gap like Backstage, Cloud Native Buildpacks, Knative, and\n' +
-  //       'Cartographer.',
-  //   },
-  // },
-  // {
-  //   time: '15:45',
-  //   title: 'Change tracks, Short Break',
-  //   duration: '15 min',
-  // },
-  // {
-  //   id: '8',
-  //   time: '16:00',
-  //   title:
-  //     "Process is what naturally follows - a cloud platform's guide on people-first transformation",
-  //   duration: '30 min',
-  //   speakers: [
-  //     {
-  //       name: 'Sebastian Kister',
-  //       photo: SebastianKisterPhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     "The fastest way to change the world is by making it a business case. Let's talk about real transformation hands-on, about time-to-market and the priorities when it's necessary to change cultural paradigms.",
-  //   coincidedEvent: {
-  //     id: '15',
-  //     time: '16:00',
-  //     title: 'Bridging Dev and Ops with eBPF: Extending Observability Upwards and Downwards',
-  //     duration: '30 min',
-  //     speakers: [
-  //       {
-  //         name: 'Raphaël Pinson',
-  //         photo: RaphaelPhoto,
-  //       },
-  //     ],
-  //     presentation:
-  //       'eBPF (extended Berkeley Packet Filter) is a powerful and versatile technology that can be used to extend observability in Linux systems. In this talk, we will explore how eBPF can be used to bridge the gap between dev and ops by providing a deeper understanding of the kernel and OS internals as well as the applications running on top. We will discuss how eBPF can be used to extend observability downwards by enabling access to low-level system information and how it can be used to extend observability upwards by providing application-level tracing capabilities.',
-  //   },
-  // },
-  // {
-  //   time: '16:30',
-  //   title: 'Change tracks, Short Break',
-  //   duration: '15 min',
-  // },
-  // {
-  //   id: '1',
-  //   time: '16:45',
-  //   title: 'eBPF for Security',
-  //   duration: '30 min',
-  //   isKeynote: true,
-  //   speakers: [
-  //     {
-  //       name: 'Liz Rice',
-  //       photo: LizRicePhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     'eBPF is a ground-breaking technology that allows us to customize the behavior of the operating system’s kernel. In this talk you’ll get an introduction to how eBPF works, and then we’ll dive into how it’s being used for a new generation of security tools. You’ll see how the Cilium team are using their in-depth knowledge of eBPF and the Linux kernel to create Tetragon, a powerful open source solution for security observability and enforcement.',
-  // },
-  // {
-  //   time: '17:15',
-  //   title: 'Closing',
-  //   duration: '15 min',
-  // },
-  // {
-  //   time: '17:30',
-  //   title: 'Apéro',
-  //   duration: '3h 45min',
-  // },
+  {
+    time: '9:00',
+    title: 'Breakfast',
+    duration: '30 min',
+  },
+  {
+    id: '01',
+    time: '9:40',
+    title: 'Empowering The Teams, Avoiding Micromanagement: The Balance of Leadership',
+    duration: '30 min',
+    isKeynote: true,
+    speakers: [
+      {
+        name: 'Sarah Gruneisen',
+        photo: SarahGruneisenPhoto,
+      },
+    ],
+    presentation:
+      'In the ever-evolving realm of DevOps, challenges aren’t just technical but interpersonal. ' +
+      'My presentation delves into the stifling flames of micromanagement and the scorching impact on team members. ' +
+      'Recounting my evolution from a fiery to a wise dragon, my talk underscores the significance of self-awareness, ' +
+      'mutual respect, and open communication.<br/><br/>' +
+      'While it’s natural to perceive micromanagers as fire-breathing beasts, ' +
+      'I will reveal the heart within, advocating for understanding, dialogue, and empowerment. ' +
+      'By taming our inner dragons, managers and team members can transition from conflict to collaboration, ' +
+      'letting innovation soar.',
+  },
+  {
+    time: '10:10',
+    title: 'Short break',
+    duration: '10 min',
+  },
+  {
+    id: '02',
+    time: '10:25',
+    title: 'Edge of Tomorrow',
+    duration: '35 min',
+    speakers: [
+      {
+        name: 'Stefan van Gastel',
+        photo: StefanVanGastelPhoto,
+      },
+      {
+        name: 'John Stroosnijder',
+        photo: JohnStroosnijderPhoto,
+      },
+    ],
+    presentation:
+      'Not all edges are alike. The Dutch Ministry Of Defence (MoD) has a need for edge computing in some very special, ' +
+      'high demanding and constrained locations. ' +
+      'Besides modern datacenters, the MoD also requires computing power and storage on remote locations. ' +
+      'These can be in small local datacenters (aka broom closets) or abroad in (physical) containers or tents, ' +
+      'but also think of ships and vehicles that are on the move and not always connected to the network or main power grid. ' +
+      'Running edge computing on these locations is always an issue. This askes for a new approach on edge computing, ' +
+      'making it robust and secure with a minimal power consumption, ' +
+      'but still easy to use. We will share our vision and work on creating an army green tainted edge, ' +
+      'using green energy resources, mobility and modern communication methods.',
+    // coincidedEvent: {
+    //   id: '03',
+    //   time: '10:25',
+    //   title: 'Welcome to K8s bakery!',
+    //   duration: '35 min',
+    //   speakers: [
+    //     {
+    //       name: 'Anushka Mittal',
+    //       // photo: AnushkaMittalPhoto,
+    //     },
+    //     {
+    //       name: 'Mritunjay Sharma',
+    //       // photo: MritunjaySharmaPhoto,
+    //     },
+    //   ],
+    //   presentation:
+    //     'Welcome to K8s bakery! Pods, Services, Deployments & other in house products are glaring at you but what if you want a cake that’s designed for your needs & occasion? Enter Custom Resource Definition! What is a CRD manifest and how to write that? Let’s bring this imaginative world of K8s bakery to KCD Utrecht with this session. In this talk, we will guide you in creating your first CRD that will help you create the object or what we call the cake of your desire! Let us answer WHAT a CRD means, WHEN you would write one, WHY & HOW the flexibility of CRDs allows you to define & manage custom resources that align with your specific ‘cake’ i.e. application requirements. A session on CRDs with an analogy of bakery will be incomplete without talking about the icing of controllers & operators in K8s. We will see how all the pieces fit together in writing a functional CRD in an interactive demo.',
+    // },
+  },
+  {
+    time: '10:55',
+    title: 'Morning break',
+    duration: '20 min',
+  },
+  {
+    id: '04',
+    time: '11:20',
+    title: 'A Greener, Cost-Effective Cloud with Serverless WebAssembly',
+    duration: '35 min',
+    speakers: [
+      {
+        name: 'Sohan Maheshwar',
+        photo: SohanMaheshwarPhoto,
+      },
+    ],
+    presentation:
+      'Software Carbon Intensity (SCI) quantifies emissions from an application, combining operational and hardware emissions. Serverless functions reduce operational emissions by running apps on-demand, but faces cold-start delays. WebAssembly (Wasm) offers a solution to cold-start issues with near-instant startup, akin to containers but more efficiently.<br/><br/>' +
+      'Wasm modules are just as secure as containers with default sandboxing, yet they start almost instantly (in microseconds). In this session, we discuss why Wasm is the ideal & greenest unit of compute for Serverless applications and how you can get started using Serverless Wasm with Spin - an open source developer tool. We’ll demo running AI inferencing Spin applications and discuss how it also enables better GPU resource sharing. By the end, you’ll have an understanding of the characteristics that make Wasm a cost-effective and sustainable unit for a greener cloud.',
+    coincidedEvent: {
+      id: '05',
+      time: '11:20',
+      title: 'Deploying Kubernetes in hostile environments',
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Giuseppe Gianquitto',
+          // photo: GiuseppeGianquittoPhoto,
+        },
+      ],
+      presentation:
+        "Deploying Kubernetes isn't merely technical; it's steering through socio-technical hurdles with often resistant stakeholders. Their resistance springs from:<br/><br/>" +
+        "- K8s's perceived complexity.<br/>" +
+        '- Hesitancy toward "trending" tech.<br/>' +
+        '- Reluctance to embrace new paradigms, risking lost expertise in traditional IT.<br/>' +
+        '- Unfamiliarity with the cloud-native model and needed architectural shifts.<br/>' +
+        "- Further complicating matters, many misjudge or downplay K8s's depth, swayed by multi-cloud allure and vendor pitches.<br/><br/>" +
+        "Drawing from my Kubernetes journey since 2016, especially in the public sector (education and research), this talk unveils these persistent challenges and our navigation strategies. It isn't just about tech, but a tech lead's voyage advocating for Kubernetes amidst varying perspectives.",
+    },
+  },
+  {
+    time: '11:50',
+    title: 'Short break',
+    duration: '10 min',
+  },
+  {
+    id: '06',
+    time: '12:00',
+    title: 'Cilium: divide et impera the networking stack',
+    duration: '35 min',
+    speakers: [
+      {
+        name: 'Remy Simons',
+        photo: RemySimonsPhoto,
+      },
+    ],
+    presentation:
+      'In the world of distributed computing where everything goes over the wire, securing the network is key to defending your data. However, traditional struggle to keep up with the dynamic world of cloud native environments. Faced with this dilemma, ilionx adapted Cilium to overcome these challenges.<br/><br/>' +
+      'This talk walks through our journey from using disconnected point solutions like Flannel for networking, NSG for network segmentation, and Fortinet for firewalling towards a more integrated and automated set up with just Cilium. It will cover how we implemented network policy first with Calico and then with Cilium to separate tenants and how we codified our network security to make it self service for developers. The audience will walk away understanding how Cilium can enable them to simplify their networking stack and automate security in the fast moving cloud native world.',
+    coincidedEvent: {
+      id: '07',
+      time: '12:00',
+      title: "Killing PET's with CPET",
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Jan Willem',
+          // photo: JanWillemPhoto,
+        },
+        {
+          name: 'Sebastiaan Mannem',
+          // photo: SebastiaanMannemPhoto,
+        },
+        {
+          name: 'Benoit Schipper',
+          // photo: BenoitSchipperPhoto,
+        },
+      ],
+      presentation: 'Updated talk abstract to be received.',
+    },
+  },
+  {
+    time: '12:35',
+    title: 'Lunch',
+    duration: '1 hour',
+  },
+  {
+    id: '08',
+    time: '13:35',
+    title: 'Migration to Kubernetes at Wehkamp',
+    duration: '35 min',
+    speakers: [
+      {
+        name: 'John Keates',
+        // photo: JohnKeatesPhoto,
+      },
+    ],
+    presentation:
+      'During our journey of migrating from a homegrown microservices platform to a Kubernetes and other CNCF projects powered setup, we encountered a few scenarios that required us to evolve from separate individual clusters, to multi-cluster and then all the way to istio-multi-mesh. Using ArgoCD, KEDA, Istio and a few other projects we managed to deliver a setup that empowers developers, lowered our cost, increased the adoption of new features while keeping everything running.<br/><br/>' +
+      'This sounds like an impossible story where somehow everything gets better, which is usually not how such huge a change turns out. In this talk, we will present where we came from, what components we cobbled together and how many attempts it took to actually migrate a live system.',
+    coincidedEvent: {
+      id: '09',
+      time: '13:35',
+      title: 'Postgres on Kubernetes: the time is now!',
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Maxim Burgerhout',
+          // photo: MaximBurgerhoutPhoto,
+        },
+      ],
+      presentation:
+        'The ability to run stateful applications in general, and RDMS in particular, on Kubernetes is relatively new, but brings new and exciting capabilities to developers, DBAs and devops teams alike. Think of self-service cluster creation and management, self-service backup and restore, automatic configuration of point-in-time recovery scenarios, etc. On top of that, by making Postgres clusters Kubernetes resources, you can now apply GitOps, CI/CD pipelines like Tekton and policy frameworks to your database.',
+    },
+  },
+  {
+    time: '14:10',
+    title: 'Short break',
+    duration: '10 min',
+  },
+  {
+    id: '10',
+    time: '14:20',
+    title: 'Getting the Most Out of Service Mesh: Our Top Tips!',
+    duration: '35 min',
+    speakers: [
+      {
+        name: 'Andrea Soldino',
+        // photo: AndreaSoldinoPhoto,
+      },
+      {
+        name: 'Shweta Vohra',
+        // photo: ShwetaVohraPhoto,
+      },
+    ],
+    presentation:
+      "Handling service topologies in Kubernetes and figuring out how they connect can be challenging, especially when you have a big list of over 2500 services to start with. In this session, we'll spill the beans on our 'oops' moments to make your journey a walk in the park! Attendees will discover how to integrate service dependencies effectively into the service mesh and ensure that Envoy performs optimally without being overwhelmed. Engineers will grasp techniques for managing services configurations. Furthermore, we'll explore how to seamlessly extend mesh behavior to gateways. Join us to unearth tips for maximizing the benefits of the Kubernetes service mesh, emphasizing Envoy's crucial role.",
+    coincidedEvent: {
+      id: '11',
+      time: '14:20',
+      title: 'Mapping K8s migration',
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Rajalakshmi Rajamuthu',
+          // photo: RajalakshmiRajamuthuPhoto,
+        },
+        {
+          name: 'Nirav Bhadradiya',
+          // photo: NiravBhadradiyaPhoto,
+        },
+      ],
+      presentation:
+        "As organizations set sail on their Kubernetes migration journey, they encounter a new world of opportunities and challenges.Embarking on a journey towards Kubernetes migration can always be a formidable task. In this paper, will guide you through the process of mapping your migration path, helping you make informed decisions that align with your organization's goals and resources. Drawing from real-world experiences and best practices, our paper will provide a comprehensive roadmap for successfully navigating the Kubernetes migration landscape.",
+    },
+  },
+  {
+    time: '14:55',
+    title: 'Afternoon break',
+    duration: '20 min',
+  },
+  {
+    id: '12',
+    time: '15:15',
+    title: 'Our journey in building a gamified cyber security platform with k8s',
+    duration: '35 min',
+    speakers: [
+      {
+        name: 'Peter van Eijk',
+        // photo: PeterVanEijkPhoto,
+      },
+    ],
+    presentation:
+      'The JointCyberRange is a facility for gamified cyber security education. It allows to create CTF (Capture the Flag) events and courses. Think of it as a CyberRange as a Service, as it can run multiple independent event tenants. We have hosted several events on it, including the Dutch national ‘Challenge the Cyber’, with 100+ participants.<br/><br/>' +
+      'Initiated by the Haagsche Hogeschool and the Hogeschool Utrecht, it was developed by several student teams. ' +
+      'It runs on Kubernetes to provide scalability, in particular for container-based challenges. ArgoCD is used for GitOps. We’ll discuss the good, the bad and the ugly of our approach.<br/><br/>' +
+      'Topics we’d discuss include architectural choices, tools, migration issues, challenges of working with student teams, mistakes that we made, production war stories, stuff that we are proud of, and so on.',
+    coincidedEvent: {
+      id: '13',
+      time: '15:15',
+      title: 'Dev to the Future - Improving Developer Experience',
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Kasra Amirsarvari',
+          // photo: KasraAmirsarvariPhoto,
+        },
+      ],
+      presentation:
+        'This talk delves into the transformative journey of modernizing developer workflows via an Internal Developer Platform (IDP) orchestrated through Kubernetes. This talk covers the intersection of Platform Engineering and Kubernetes, demonstrating how Kubernetes can serve as a runtime as well as a cloud-based development environment. With a focus on self-service capabilities, the presentation outlines how an IDP can alleviate tooling complexity, minimize time-to-value, and augment the Developer Experience, thereby leading to more efficient, high-quality software delivery.',
+    },
+  },
+  {
+    time: '15:50',
+    title: 'Short break',
+    duration: '10 min',
+  },
+  {
+    id: '14',
+    time: '16:00',
+    title: '⚡️ Lightning Talks ⚡️',
+    duration: '35 min',
+    speakers: [
+      {
+        name: 'Marco Verleun',
+        photo: MarcoVerleunPhoto,
+      },
+      {
+        name: 'Louëlla Creemers',
+        // photo: LouellaCreemersPhoto,
+      },
+      {
+        name: 'Serdar Kalaycı',
+        // photo: SerdarKalayciPhoto,
+      },
+    ],
+    presentation:
+      'Short and interesting talks:<br/>' +
+      '⚡ Find CVEs with ease<br/>' +
+      '⚡ Docker & Kubernetes Unboxed<br/>' +
+      '⚡ Back to basics: 12 Factor App in Cloud Native Era',
+  },
+  {
+    time: '16:35',
+    title: 'Short break',
+    duration: '10 min',
+  },
+  {
+    id: '15',
+    time: '16:45',
+    title: 'Closing keynote',
+    duration: '35 min',
+    isKeynote: true,
+    speakers: [
+      {
+        name: 'Sevi Karakulak',
+        photo: SeviKarakulakPhoto,
+      },
+    ],
+    presentation: 'INSERT KEYNOTE ABSTRACT HERE',
+  },
+  {
+    time: '17:30',
+    title: 'Drinks / networking',
+    duration: '1 hour',
+  },
 ];
 
 const Schedule = ({ location }) => {
@@ -433,7 +393,7 @@ const Schedule = ({ location }) => {
                   'bg-primary-4': isEven,
                   'bg-lightGreen': title === 'Welcome',
                   'bg-lightYellow': title === 'Lunch',
-                  'bg-lightOrange': title === 'Closing',
+                  'bg-lightOrange': title === 'Drinks / networking',
                 }
               )}
               key={index}
@@ -490,7 +450,7 @@ const Schedule = ({ location }) => {
                             <figure className="flex items-center gap-x-2">
                               <img
                                 className="h-7 w-7 rounded-full"
-                                src={photo}
+                                src={photo || UserPhoto}
                                 width={28}
                                 height={28}
                                 alt={name}
@@ -547,7 +507,7 @@ const Schedule = ({ location }) => {
                               <figure className="flex items-center gap-x-2">
                                 <img
                                   className="h-7 w-7 rounded-full"
-                                  src={photo}
+                                  src={photo || UserPhoto}
                                   width={28}
                                   height={28}
                                   alt={`${name} photo`}

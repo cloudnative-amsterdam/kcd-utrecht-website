@@ -5,7 +5,7 @@ import LINKS from 'constants/links.js';
 
 const TITLE = 'Schedule for <time class="text-blue-1 xs:block">1 December, 2023</time>';
 const DESCRIPTION =
-  "Get ready for an action-packed day. With one track (and maybe even two!) of insightful and interesting talks, you'll have plenty of opportunities to learn from experts in the field. The whole event will be held in English.";
+  "Get ready for an action-packed day. With two tracks of insightful and interesting talks, you'll have plenty of opportunities to learn from experts in the field. The whole event will be held in English.";
 
 const Hero = () => (
   <section className="safe-paddings pt-24 pb-10 lg:pt-[4.5rem] md:pt-16 md:pb-4 sm:py-8">

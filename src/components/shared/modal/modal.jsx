@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import React, { useCallback, useEffect, useId, useState } from 'react';
 
 import ArrowRight from 'components/pages/archive/gallery/svg/arrow-right.inline.svg';
+import UserPhoto from 'components/pages/schedule/schedule/images/user-photo.jpg';
 import CloseIcon from 'icons/close.inline.svg';
 import CommunityIcon from 'icons/cncf-icon.inline.svg';
 import GithubIcon from 'icons/github-icon.inline.svg';
@@ -189,15 +190,20 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                   </span>
                   {speakers.length > 0 &&
                     speakers.map(({ id: speakerId, name, photo }, index) => (
-                      <Link
-                        className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 hover:text-blue-1"
-                        to="/#speaker"
-                        state={{ modalId: speakerId || id }}
+                      // <Link
+                      //   className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 hover:text-blue-1"
+                      //   to="/#speaker"
+                      //   state={{ modalId: speakerId || id }}
+                      //   key={index}
+                      // >
+                      <span
+                        id={`speaker-${speakerId || id}`}
                         key={index}
+                        className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3"
                       >
                         <img
                           className="h-7 w-7 rounded-full"
-                          src={photo}
+                          src={photo || UserPhoto}
                           width={28}
                           alt={name}
                           loading="lazy"
@@ -205,7 +211,8 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                         <p className="whitespace-nowrap text-sm font-medium leading-none sm:whitespace-normal">
                           {name}
                         </p>
-                      </Link>
+                      </span>
+                      // </Link>
                     ))}
                 </div>
                 <h2 className="mt-7 text-2xl font-semibold leading-tight tracking-[-0.01em] text-primary-1 sm:text-lg">
