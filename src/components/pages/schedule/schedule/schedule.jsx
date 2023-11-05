@@ -116,7 +116,7 @@ const ITEMS = [
   },
   {
     id: '04',
-    time: '11:20',
+    time: '11:15',
     title: 'A Greener, Cost-Effective Cloud with Serverless WebAssembly',
     duration: '35 min',
     speakers: [
