@@ -116,7 +116,7 @@ const ITEMS = [
   },
   {
     id: '04',
-    time: '11:20',
+    time: '11:15',
     title: 'A Greener, Cost-Effective Cloud with Serverless WebAssembly',
     duration: '35 min',
     speakers: [
@@ -171,7 +171,7 @@ const ITEMS = [
     coincidedEvent: {
       id: '07',
       time: '12:00',
-      title: "Killing PET's with CPET",
+      title: "Killing PET's with CPET at a Dutch government organization is central to our story. ",
       duration: '35 min',
       speakers: [
         {
@@ -187,7 +187,8 @@ const ITEMS = [
           photo: BenoitSchipperPhoto,
         },
       ],
-      presentation: 'Updated talk abstract to be received.',
+      presentation:
+        "A Dutch government organization is on a journey to improve their developer velocity by leveraging the power of multi-cluster Kubernetes, ArgoCD, Tekton, Grafana, Kyverno, CNPG and <Insert Cool Tech>. Along this journey, the CPET (CloudNative Platform Enablement Team) team has introduced a PaaS Operator (Project as a Service) to provide a self service option for DevOps teams (our EndUsers) to kickstart their cloud native journey. One Pull request, One .YAML, to kickstart your project environment (including RBAC, Quota's etc.) with optional clearcut capabilities such as ArgoCD, Tekton, Grafana and KeyCloak.",
     },
   },
   {
@@ -348,7 +349,7 @@ const ITEMS = [
         photo: SeviKarakulakPhoto,
       },
     ],
-    presentation: 'INSERT KEYNOTE ABSTRACT HERE',
+    presentation: 'No abstract available yet.',
   },
   {
     time: '17:30',
