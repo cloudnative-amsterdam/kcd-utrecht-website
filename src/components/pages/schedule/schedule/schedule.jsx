@@ -131,7 +131,7 @@ const ITEMS = [
     coincidedEvent: {
       id: '05',
       time: '11:20',
-      title: 'Deploying Kubernetes in hostile environments',
+      title: 'Socio-technical challenges of adopting Kubernetes',
       duration: '35 min',
       speakers: [
         {
