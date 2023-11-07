@@ -172,7 +172,7 @@ const ITEMS = [
     coincidedEvent: {
       id: '07',
       time: '12:00',
-      title: "Killing PET's with CPET at a Dutch government organization is central to our story. ",
+      title: 'Killing PETs with CPET at a Dutch government organization is central to our story. ',
       duration: '35 min',
       speakers: [
         {
