@@ -176,7 +176,7 @@ const ITEMS = [
       duration: '35 min',
       speakers: [
         {
-          name: 'Jan Willem',
+          name: 'Jan Willem Van Hermon',
           photo: JanWillemPhoto,
         },
         {
