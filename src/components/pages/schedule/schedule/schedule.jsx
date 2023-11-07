@@ -9,6 +9,7 @@ import AndreaSoldinoPhoto from './images/andrea-soldino-photo.jpg';
 import BenoitSchipperPhoto from './images/benoit-schipper-photo.jpg';
 import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto-photo.jpg';
 import JanWillemPhoto from './images/jan-willem-photo.jpg';
+import JohnKeatesPhoto from './images/john-keates-photo.jpg';
 import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
 import KasraAmirsarvariPhoto from './images/kasra-amirsarvari-photo.jpg';
 import LouellaCreemersPhoto from './images/louella-creemers-photo.jpg';
@@ -205,7 +206,7 @@ const ITEMS = [
     speakers: [
       {
         name: 'John Keates',
-        // photo: JohnKeatesPhoto,
+        photo: JohnKeatesPhoto,
       },
     ],
     presentation:
