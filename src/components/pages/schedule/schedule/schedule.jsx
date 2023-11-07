@@ -329,9 +329,15 @@ const ITEMS = [
     ],
     presentation:
       'Short and interesting talks:<br/>' +
-      '⚡ Find CVEs with ease<br/>' +
-      '⚡ Docker & Kubernetes Unboxed<br/>' +
-      '⚡ Back to basics: 12 Factor App in Cloud Native Era',
+      '<p class="text-xl md:text-lg font-semibold">⚡️ Find CVEs with ease</p>' +
+      '<p class="text-sm font-normal text-gray-400">By Marco Verleun</p>' +
+      "<p>In this session we'll explore some of the possibilities and tools that can be used to create SBOM files, analyze them (during CI/CD?) and even store them in a database.</p>" +
+      '<p class="text-xl md:text-lg font-semibold">⚡️ Docker & Kubernetes Unboxed<p/>' +
+      '<p class="text-sm font-normal text-gray-400">By Louëlla Creemers</p>' +
+      '<p>Have you ever been puzzled by terms like "Docker" and "Kubernetes"? If you have, you\'re not alone! In this lightning talk, let\'s simplify Docker and Kubernetes by using a simple analogy involving "boxes." and discover how Docker and Kubernetes can change the way you handle your projects. Bid farewell to the confusion and welcome the magic of containerization and automatic project management.</p>' +
+      '<p class="text-xl md:text-lg font-semibold">⚡️ Back to basics: 12 Factor App in Cloud Native Era</p>' +
+      '<p class="text-sm font-normal text-gray-400">By Serdar Kalaycı</p>' +
+      '<p>12 Factor App was first released 12 years ago, 3 years before Kubernetes was first released. Since then, the community has been eager to adopt Kubernetes itself as a platform, but the guideline to develop good cloud-native software has been neglected in comparison. Similar to the initial cloud movement, lifting and shifting existing workloads onto Kubernetes did not lead to cloud-native solutions, but made management and maintenance even more difficult. Today we will look at the lessons of the 12 Factor App and find out how these lessons make software run more smoothly on Kubernetes and how Kubernetes helps you develop 12 Factor Apps more easily.</p>',
   },
   {
     time: '16:35',
