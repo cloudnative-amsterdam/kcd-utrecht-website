@@ -10,6 +10,7 @@ import BenoitSchipperPhoto from './images/benoit-schipper-photo.jpg';
 import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto-photo.jpg';
 import JanWillemPhoto from './images/jan-willem-photo.jpg';
 import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
+import KasraAmirsarvariPhoto from './images/kasra-amirsarvari-photo.jpg';
 import LouellaCreemersPhoto from './images/louella-creemers-photo.jpg';
 import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
 import MaximBurgerhoutPhoto from './images/maxim-burgerhout-photo.jpg';
@@ -295,7 +296,7 @@ const ITEMS = [
       speakers: [
         {
           name: 'Kasra Amirsarvari',
-          // photo: KasraAmirsarvariPhoto,
+          photo: KasraAmirsarvariPhoto,
         },
       ],
       presentation:
