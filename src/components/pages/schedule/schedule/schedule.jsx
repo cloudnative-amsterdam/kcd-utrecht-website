@@ -131,23 +131,25 @@ const ITEMS = [
       'Wasm modules are just as secure as containers with default sandboxing, yet they start almost instantly (in microseconds). In this session, we discuss why Wasm is the ideal & greenest unit of compute for Serverless applications and how you can get started using Serverless Wasm with Spin - an open source developer tool. We’ll demo running AI inferencing Spin applications and discuss how it also enables better GPU resource sharing. By the end, you’ll have an understanding of the characteristics that make Wasm a cost-effective and sustainable unit for a greener cloud.',
     coincidedEvent: {
       id: '05',
-      time: '11:20',
-      title: 'Socio-technical challenges of adopting Kubernetes',
+      time: '11:15',
       duration: '35 min',
+      title: 'Killing PETs with CPET at a Dutch government organization is central to our story. ',
       speakers: [
         {
-          name: 'Giuseppe Gianquitto',
-          photo: GiuseppeGianquittoPhoto,
+          name: 'Jan Willem Van Hermon',
+          photo: JanWillemPhoto,
+        },
+        {
+          name: 'Sebastiaan Mannem',
+          photo: SebastiaanMannemPhoto,
+        },
+        {
+          name: 'Benoit Schipper',
+          photo: BenoitSchipperPhoto,
         },
       ],
       presentation:
-        "Deploying Kubernetes isn't merely technical; it's steering through socio-technical hurdles with often resistant stakeholders. Their resistance springs from:<br/><br/>" +
-        "- K8s's perceived complexity.<br/>" +
-        '- Hesitancy toward "trending" tech.<br/>' +
-        '- Reluctance to embrace new paradigms, risking lost expertise in traditional IT.<br/>' +
-        '- Unfamiliarity with the cloud-native model and needed architectural shifts.<br/>' +
-        "- Further complicating matters, many misjudge or downplay K8s's depth, swayed by multi-cloud allure and vendor pitches.<br/><br/>" +
-        "Drawing from my Kubernetes journey since 2016, especially in the public sector (education and research), this talk unveils these persistent challenges and our navigation strategies. It isn't just about tech, but a tech lead's voyage advocating for Kubernetes amidst varying perspectives.",
+        "A Dutch government organization is on a journey to improve their developer velocity by leveraging the power of multi-cluster Kubernetes, ArgoCD, Tekton, Grafana, Kyverno, CNPG and <Insert Cool Tech>. Along this journey, the CPET (CloudNative Platform Enablement Team) team has introduced a PaaS Operator (Project as a Service) to provide a self service option for DevOps teams (our EndUsers) to kickstart their cloud native journey. One Pull request, One .YAML, to kickstart your project environment (including RBAC, Quota's etc.) with optional clearcut capabilities such as ArgoCD, Tekton, Grafana and KeyCloak.",
     },
   },
   {
@@ -172,24 +174,22 @@ const ITEMS = [
     coincidedEvent: {
       id: '07',
       time: '12:00',
-      title: 'Killing PETs with CPET at a Dutch government organization is central to our story. ',
       duration: '35 min',
+      title: 'Socio-technical challenges of adopting Kubernetes',
       speakers: [
         {
-          name: 'Jan Willem Van Hermon',
-          photo: JanWillemPhoto,
-        },
-        {
-          name: 'Sebastiaan Mannem',
-          photo: SebastiaanMannemPhoto,
-        },
-        {
-          name: 'Benoit Schipper',
-          photo: BenoitSchipperPhoto,
+          name: 'Giuseppe Gianquitto',
+          photo: GiuseppeGianquittoPhoto,
         },
       ],
       presentation:
-        "A Dutch government organization is on a journey to improve their developer velocity by leveraging the power of multi-cluster Kubernetes, ArgoCD, Tekton, Grafana, Kyverno, CNPG and <Insert Cool Tech>. Along this journey, the CPET (CloudNative Platform Enablement Team) team has introduced a PaaS Operator (Project as a Service) to provide a self service option for DevOps teams (our EndUsers) to kickstart their cloud native journey. One Pull request, One .YAML, to kickstart your project environment (including RBAC, Quota's etc.) with optional clearcut capabilities such as ArgoCD, Tekton, Grafana and KeyCloak.",
+        "Deploying Kubernetes isn't merely technical; it's steering through socio-technical hurdles with often resistant stakeholders. Their resistance springs from:<br/><br/>" +
+        "- K8s's perceived complexity.<br/>" +
+        '- Hesitancy toward "trending" tech.<br/>' +
+        '- Reluctance to embrace new paradigms, risking lost expertise in traditional IT.<br/>' +
+        '- Unfamiliarity with the cloud-native model and needed architectural shifts.<br/>' +
+        "- Further complicating matters, many misjudge or downplay K8s's depth, swayed by multi-cloud allure and vendor pitches.<br/><br/>" +
+        "Drawing from my Kubernetes journey since 2016, especially in the public sector (education and research), this talk unveils these persistent challenges and our navigation strategies. It isn't just about tech, but a tech lead's voyage advocating for Kubernetes amidst varying perspectives.",
     },
   },
   {
