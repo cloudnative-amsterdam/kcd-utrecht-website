@@ -11,6 +11,7 @@ import PabloMusaPhoto from './images/pablo-musa-photo.png';
 import RajeshGunasekaranPhoto from './images/rajesh-gunasekaran-photo.png';
 import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
 import SerkanCapkanPhoto from './images/serkan-capkan-photo.jpeg';
+import CarlosMestrePhoto from './images/carlos-mestre-photo.jpeg';
 
 
 const ITEMS = [
@@ -61,6 +62,12 @@ const ITEMS = [
     position: 'Solutions Architect at Cloutive',
     photo: SerkanCapkanPhoto,
     url: 'https://www.linkedin.com/in/serkancapkan/',
+  },  
+  {
+    name: 'Carlos Mestre del Pino',
+    position: 'Platform Engineering Consultant at ITQ',
+    photo: CarlosMestrePhoto,
+    url: 'https://www.linkedin.com/in/mestredelpino/',
   },  
 ];
 
