@@ -62,6 +62,12 @@ const ITEMS = [
     photo: SerkanCapkanPhoto,
     url: 'https://www.linkedin.com/in/serkancapkan/',
   },  
+  {
+    name: 'Carlos Mestre del Pino',
+    position: 'Platform Engineering Consultant at ITQ',
+    photo: CarlosMestrePhoto,
+    url: 'https://www.linkedin.com/in/mestredelpino/',
+  },  
 ];
 
 const LOGOS = [
