@@ -11,6 +11,7 @@ import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto-photo.jpg';
 import JanWillemPhoto from './images/jan-willem-photo.jpg';
 import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
 import LouellaCreemersPhoto from './images/louella-creemers-photo.jpg';
+import MarcelKerkerPhoto from './images/marcel-kerker-photo.jpg';
 import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
 import MaximBurgerhoutPhoto from './images/maxim-burgerhout-photo.jpg';
 import NiravBhadradiyaPhoto from './images/nirav-bhadradiya-photo.jpg';
@@ -24,8 +25,10 @@ import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 import ShwetaVohraPhoto from './images/shweta-vohra-photo.jpg';
 import SohanMaheshwarPhoto from './images/sohan-maheshwar-photo.jpg';
 import StefanVanGastelPhoto from './images/stefan-van-gastel-photo.jpg';
-// UserPhoto is default when no speaker picture is present
 import UserPhoto from './images/user-photo.jpg';
+import WilliamRizzoPhoto from './images/william-rizzo-photo.jpg';
+// import AndreaGiardiniPhoto from './images/william-rizzo-photo.jpg';
+// UserPhoto is default when no speaker picture is present
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
@@ -310,35 +313,81 @@ const ITEMS = [
   {
     id: '14',
     time: '16:00',
-    title: '⚡️ Lightning Talks ⚡️',
+    title: 'Contributors Panel',
     duration: '35 min',
     speakers: [
       {
-        name: 'Marco Verleun',
-        photo: MarcoVerleunPhoto,
+        name: 'William Rizzo',
+        photo: WilliamRizzoPhoto,
       },
       {
-        name: 'Louëlla Creemers',
-        photo: LouellaCreemersPhoto,
+        name: 'Marcel Kerker',
+        photo: MarcelKerkerPhoto,
       },
       {
-        name: 'Serdar Kalaycı',
-        photo: SerdarKalayciPhoto,
+        name: 'Andrea Giardini',
+        // photo: AndreaGiardiniPhoto,
       },
     ],
-    presentation:
-      'Short and interesting talks:<br/>' +
-      '⚡ Find CVEs with ease<br/>' +
-      '⚡ Docker & Kubernetes Unboxed<br/>' +
-      '⚡ Back to basics: 12 Factor App in Cloud Native Era',
+    presentation: 'Contributors Panel',
+    coincidedEvent: {
+      id: '15',
+      time: '16:00',
+      title: '⚡️ Lightning Talks ⚡️',
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Marco Verleun',
+          photo: MarcoVerleunPhoto,
+        },
+        {
+          name: 'Louëlla Creemers',
+          photo: LouellaCreemersPhoto,
+        },
+        {
+          name: 'Serdar Kalaycı',
+          photo: SerdarKalayciPhoto,
+        },
+      ],
+      presentation:
+        'Short and interesting talks:<br/>' +
+        '⚡ Find CVEs with ease<br/>' +
+        '⚡ Docker & Kubernetes Unboxed<br/>' +
+        '⚡ Back to basics: 12 Factor App in Cloud Native Era',
+    },
   },
+  // {
+  //   id: '15',
+  //   time: '16:00',
+  //   title: '⚡️ Lightning Talks ⚡️',
+  //   duration: '35 min',
+  //   speakers: [
+  //     {
+  //       name: 'Marco Verleun',
+  //       photo: MarcoVerleunPhoto,
+  //     },
+  //     {
+  //       name: 'Louëlla Creemers',
+  //       photo: LouellaCreemersPhoto,
+  //     },
+  //     {
+  //       name: 'Serdar Kalaycı',
+  //       photo: SerdarKalayciPhoto,
+  //     },
+  //   ],
+  //   presentation:
+  //     'Short and interesting talks:<br/>' +
+  //     '⚡ Find CVEs with ease<br/>' +
+  //     '⚡ Docker & Kubernetes Unboxed<br/>' +
+  //     '⚡ Back to basics: 12 Factor App in Cloud Native Era',
+  // },
   {
     time: '16:35',
     title: 'Short break',
     duration: '10 min',
   },
   {
-    id: '15',
+    id: '16',
     time: '16:45',
     title: 'Closing keynote',
     duration: '35 min',
