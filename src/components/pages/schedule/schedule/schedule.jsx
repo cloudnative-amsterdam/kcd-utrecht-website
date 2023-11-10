@@ -95,24 +95,24 @@ const ITEMS = [
       'making it robust and secure with a minimal power consumption, ' +
       'but still easy to use. We will share our vision and work on creating an army green tainted edge, ' +
       'using green energy resources, mobility and modern communication methods.',
-    // coincidedEvent: {
-    //   id: '03',
-    //   time: '10:25',
-    //   title: 'Welcome to K8s bakery!',
-    //   duration: '35 min',
-    //   speakers: [
-    //     {
-    //       name: 'Anushka Mittal',
-    //       // photo: AnushkaMittalPhoto,
-    //     },
-    //     {
-    //       name: 'Mritunjay Sharma',
-    //       // photo: MritunjaySharmaPhoto,
-    //     },
-    //   ],
-    //   presentation:
-    //     'Welcome to K8s bakery! Pods, Services, Deployments & other in house products are glaring at you but what if you want a cake that’s designed for your needs & occasion? Enter Custom Resource Definition! What is a CRD manifest and how to write that? Let’s bring this imaginative world of K8s bakery to KCD Utrecht with this session. In this talk, we will guide you in creating your first CRD that will help you create the object or what we call the cake of your desire! Let us answer WHAT a CRD means, WHEN you would write one, WHY & HOW the flexibility of CRDs allows you to define & manage custom resources that align with your specific ‘cake’ i.e. application requirements. A session on CRDs with an analogy of bakery will be incomplete without talking about the icing of controllers & operators in K8s. We will see how all the pieces fit together in writing a functional CRD in an interactive demo.',
-    // },
+    coincidedEvent: {
+      id: '03',
+      time: '10:25',
+      title: 'Doing Multi-Cloud the Easy Way... But should you? ',
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Nico Krijnen',
+          // photo: AnushkaMittalPhoto,
+        },
+      ],
+      presentation:
+        "In today's rapidly evolving technological landscape, organizations are increasingly adopting cloud computing as a means to enhance scalability and flexibility. " +
+        'However, multi-cloud makes this a complex decision process. ' +
+        'Tools like Kubernetes, Terraform, Dapr and Wing simplify multi-cloud by providing a unified programming model that work seamlessly across different clouds. ' +
+        'That sounds great! Almost too good to be true? What are the trade-offs that they bring? Do they truly prevent vendor lock-in? ' +
+        'And what are you loosing by not making full use of what your cloud vendor has to offer?',
+    },
   },
   {
     time: '10:55',
@@ -362,7 +362,7 @@ const ITEMS = [
         '<p class="text-xl md:text-lg font-semibold">⚡️ Back to basics: 12 Factor App in Cloud Native Era</p>' +
         '<p class="text-sm font-normal text-gray-400">By Serdar Kalaycı</p>' +
         '<p>12 Factor App was first released 12 years ago, 3 years before Kubernetes was first released. Since then, the community has been eager to adopt Kubernetes itself as a platform, but the guideline to develop good cloud-native software has been neglected in comparison. Similar to the initial cloud movement, lifting and shifting existing workloads onto Kubernetes did not lead to cloud-native solutions, but made management and maintenance even more difficult. Today we will look at the lessons of the 12 Factor App and find out how these lessons make software run more smoothly on Kubernetes and how Kubernetes helps you develop 12 Factor Apps more easily.</p>',
-      },
+    },
   },
   // {
   //   id: '15',
