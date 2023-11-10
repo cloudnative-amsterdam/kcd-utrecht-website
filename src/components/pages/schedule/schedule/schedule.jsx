@@ -9,7 +9,9 @@ import AndreaSoldinoPhoto from './images/andrea-soldino-photo.jpg';
 import BenoitSchipperPhoto from './images/benoit-schipper-photo.jpg';
 import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto-photo.jpg';
 import JanWillemPhoto from './images/jan-willem-photo.jpg';
+import JohnKeatesPhoto from './images/john-keates-photo.jpg';
 import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
+import KasraAmirsarvariPhoto from './images/kasra-amirsarvari-photo.jpg';
 import LouellaCreemersPhoto from './images/louella-creemers-photo.jpg';
 import MarcelKerkerPhoto from './images/marcel-kerker-photo.jpg';
 import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
@@ -133,23 +135,25 @@ const ITEMS = [
       'Wasm modules are just as secure as containers with default sandboxing, yet they start almost instantly (in microseconds). In this session, we discuss why Wasm is the ideal & greenest unit of compute for Serverless applications and how you can get started using Serverless Wasm with Spin - an open source developer tool. We’ll demo running AI inferencing Spin applications and discuss how it also enables better GPU resource sharing. By the end, you’ll have an understanding of the characteristics that make Wasm a cost-effective and sustainable unit for a greener cloud.',
     coincidedEvent: {
       id: '05',
-      time: '11:20',
-      title: 'Socio-technical challenges of adopting Kubernetes',
+      time: '11:15',
       duration: '35 min',
+      title: 'Killing PETs with CPET at a Dutch government organization is central to our story. ',
       speakers: [
         {
-          name: 'Giuseppe Gianquitto',
-          photo: GiuseppeGianquittoPhoto,
+          name: 'Jan Willem Van Hermon',
+          photo: JanWillemPhoto,
+        },
+        {
+          name: 'Sebastiaan Mannem',
+          photo: SebastiaanMannemPhoto,
+        },
+        {
+          name: 'Benoit Schipper',
+          photo: BenoitSchipperPhoto,
         },
       ],
       presentation:
-        "Deploying Kubernetes isn't merely technical; it's steering through socio-technical hurdles with often resistant stakeholders. Their resistance springs from:<br/><br/>" +
-        "- K8s's perceived complexity.<br/>" +
-        '- Hesitancy toward "trending" tech.<br/>' +
-        '- Reluctance to embrace new paradigms, risking lost expertise in traditional IT.<br/>' +
-        '- Unfamiliarity with the cloud-native model and needed architectural shifts.<br/>' +
-        "- Further complicating matters, many misjudge or downplay K8s's depth, swayed by multi-cloud allure and vendor pitches.<br/><br/>" +
-        "Drawing from my Kubernetes journey since 2016, especially in the public sector (education and research), this talk unveils these persistent challenges and our navigation strategies. It isn't just about tech, but a tech lead's voyage advocating for Kubernetes amidst varying perspectives.",
+        "A Dutch government organization is on a journey to improve their developer velocity by leveraging the power of multi-cluster Kubernetes, ArgoCD, Tekton, Grafana, Kyverno, CNPG and <Insert Cool Tech>. Along this journey, the CPET (CloudNative Platform Enablement Team) team has introduced a PaaS Operator (Project as a Service) to provide a self service option for DevOps teams (our EndUsers) to kickstart their cloud native journey. One Pull request, One .YAML, to kickstart your project environment (including RBAC, Quota's etc.) with optional clearcut capabilities such as ArgoCD, Tekton, Grafana and KeyCloak.",
     },
   },
   {
@@ -174,24 +178,22 @@ const ITEMS = [
     coincidedEvent: {
       id: '07',
       time: '12:00',
-      title: "Killing PET's with CPET at a Dutch government organization is central to our story. ",
       duration: '35 min',
+      title: 'Socio-technical challenges of adopting Kubernetes',
       speakers: [
         {
-          name: 'Jan Willem',
-          photo: JanWillemPhoto,
-        },
-        {
-          name: 'Sebastiaan Mannem',
-          photo: SebastiaanMannemPhoto,
-        },
-        {
-          name: 'Benoit Schipper',
-          photo: BenoitSchipperPhoto,
+          name: 'Giuseppe Gianquitto',
+          photo: GiuseppeGianquittoPhoto,
         },
       ],
       presentation:
-        "A Dutch government organization is on a journey to improve their developer velocity by leveraging the power of multi-cluster Kubernetes, ArgoCD, Tekton, Grafana, Kyverno, CNPG and <Insert Cool Tech>. Along this journey, the CPET (CloudNative Platform Enablement Team) team has introduced a PaaS Operator (Project as a Service) to provide a self service option for DevOps teams (our EndUsers) to kickstart their cloud native journey. One Pull request, One .YAML, to kickstart your project environment (including RBAC, Quota's etc.) with optional clearcut capabilities such as ArgoCD, Tekton, Grafana and KeyCloak.",
+        "Deploying Kubernetes isn't merely technical; it's steering through socio-technical hurdles with often resistant stakeholders. Their resistance springs from:<br/><br/>" +
+        "- K8s's perceived complexity.<br/>" +
+        '- Hesitancy toward "trending" tech.<br/>' +
+        '- Reluctance to embrace new paradigms, risking lost expertise in traditional IT.<br/>' +
+        '- Unfamiliarity with the cloud-native model and needed architectural shifts.<br/>' +
+        "- Further complicating matters, many misjudge or downplay K8s's depth, swayed by multi-cloud allure and vendor pitches.<br/><br/>" +
+        "Drawing from my Kubernetes journey since 2016, especially in the public sector (education and research), this talk unveils these persistent challenges and our navigation strategies. It isn't just about tech, but a tech lead's voyage advocating for Kubernetes amidst varying perspectives.",
     },
   },
   {
@@ -207,7 +209,7 @@ const ITEMS = [
     speakers: [
       {
         name: 'John Keates',
-        // photo: JohnKeatesPhoto,
+        photo: JohnKeatesPhoto,
       },
     ],
     presentation:
@@ -298,7 +300,7 @@ const ITEMS = [
       speakers: [
         {
           name: 'Kasra Amirsarvari',
-          // photo: KasraAmirsarvariPhoto,
+          photo: KasraAmirsarvariPhoto,
         },
       ],
       presentation:
@@ -351,10 +353,16 @@ const ITEMS = [
       ],
       presentation:
         'Short and interesting talks:<br/>' +
-        '⚡ Find CVEs with ease<br/>' +
-        '⚡ Docker & Kubernetes Unboxed<br/>' +
-        '⚡ Back to basics: 12 Factor App in Cloud Native Era',
-    },
+        '<p class="text-xl md:text-lg font-semibold">⚡️ Find CVEs with ease</p>' +
+        '<p class="text-sm font-normal text-gray-400">By Marco Verleun</p>' +
+        "<p>In this session we'll explore some of the possibilities and tools that can be used to create SBOM files, analyze them (during CI/CD?) and even store them in a database.</p>" +
+        '<p class="text-xl md:text-lg font-semibold">⚡️ Docker & Kubernetes Unboxed<p/>' +
+        '<p class="text-sm font-normal text-gray-400">By Louëlla Creemers</p>' +
+        '<p>Have you ever been puzzled by terms like "Docker" and "Kubernetes"? If you have, you\'re not alone! In this lightning talk, let\'s simplify Docker and Kubernetes by using a simple analogy involving "boxes." and discover how Docker and Kubernetes can change the way you handle your projects. Bid farewell to the confusion and welcome the magic of containerization and automatic project management.</p>' +
+        '<p class="text-xl md:text-lg font-semibold">⚡️ Back to basics: 12 Factor App in Cloud Native Era</p>' +
+        '<p class="text-sm font-normal text-gray-400">By Serdar Kalaycı</p>' +
+        '<p>12 Factor App was first released 12 years ago, 3 years before Kubernetes was first released. Since then, the community has been eager to adopt Kubernetes itself as a platform, but the guideline to develop good cloud-native software has been neglected in comparison. Similar to the initial cloud movement, lifting and shifting existing workloads onto Kubernetes did not lead to cloud-native solutions, but made management and maintenance even more difficult. Today we will look at the lessons of the 12 Factor App and find out how these lessons make software run more smoothly on Kubernetes and how Kubernetes helps you develop 12 Factor Apps more easily.</p>',
+      },
   },
   // {
   //   id: '15',

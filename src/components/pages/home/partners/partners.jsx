@@ -2,6 +2,7 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
+import WorkingSpirit from './images/working-spirit.png';
 import KubeCareers from './images/kube-careers.png';
 import KubeEvents from './images/kubevents.svg';
 import RebelAstronaut from './images/rebel-astronaut.png';
@@ -9,6 +10,7 @@ import RebelAstronaut from './images/rebel-astronaut.png';
 const TITLE = 'Community & Media Partners';
 
 const ITEMS = [
+  { icon: WorkingSpirit, url: 'https://www.workingspirit.nl' },
   { icon: KubeCareers, url: 'https://kube.careers/' },
   { icon: KubeEvents, url: 'https://kube.events/' },
   { icon: RebelAstronaut, url: 'https://rebelastronaut.co.uk/' },

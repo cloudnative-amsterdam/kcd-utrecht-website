@@ -208,9 +208,9 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                           alt={name}
                           loading="lazy"
                         />
-                        <p className="whitespace-nowrap text-sm font-medium leading-none sm:whitespace-normal">
+                        <div className="whitespace-nowrap text-sm font-medium leading-none sm:whitespace-normal">
                           {name}
-                        </p>
+                        </div>
                       </span>
                       // </Link>
                     ))}
