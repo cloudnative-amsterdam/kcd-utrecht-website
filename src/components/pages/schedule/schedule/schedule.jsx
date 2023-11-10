@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
+import AndreaGiardiniPhoto from './images/andrea-giardini-photo.jpg';
 import AndreaSoldinoPhoto from './images/andrea-soldino-photo.jpg';
 import BenoitSchipperPhoto from './images/benoit-schipper-photo.jpg';
 import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto-photo.jpg';
@@ -13,8 +14,10 @@ import JohnKeatesPhoto from './images/john-keates-photo.jpg';
 import JohnStroosnijderPhoto from './images/john-stroosnijder-photo.jpg';
 import KasraAmirsarvariPhoto from './images/kasra-amirsarvari-photo.jpg';
 import LouellaCreemersPhoto from './images/louella-creemers-photo.jpg';
+import MarcelKerkerPhoto from './images/marcel-kerker-photo.jpg';
 import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
 import MaximBurgerhoutPhoto from './images/maxim-burgerhout-photo.jpg';
+import NicoKrijnenPhoto from './images/nico-krijnen-photo.jpg';
 import NiravBhadradiyaPhoto from './images/nirav-bhadradiya-photo.jpg';
 import PeterVanEijkPhoto from './images/peter-van-eijk-photo.jpg';
 import RajalakshmiRajamuthuPhoto from './images/rajalakshmi-rajamuthu-photo.jpg';
@@ -26,8 +29,10 @@ import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 import ShwetaVohraPhoto from './images/shweta-vohra-photo.jpg';
 import SohanMaheshwarPhoto from './images/sohan-maheshwar-photo.jpg';
 import StefanVanGastelPhoto from './images/stefan-van-gastel-photo.jpg';
-// UserPhoto is default when no speaker picture is present
 import UserPhoto from './images/user-photo.jpg';
+import WilliamRizzoPhoto from './images/william-rizzo-photo.jpg';
+// import AndreaGiardiniPhoto from './images/william-rizzo-photo.jpg';
+// UserPhoto is default when no speaker picture is present
 // TODO: merge with ITEMS array from components/pages/home/speakers
 const ITEMS = [
   {
@@ -92,24 +97,24 @@ const ITEMS = [
       'making it robust and secure with a minimal power consumption, ' +
       'but still easy to use. We will share our vision and work on creating an army green tainted edge, ' +
       'using green energy resources, mobility and modern communication methods.',
-    // coincidedEvent: {
-    //   id: '03',
-    //   time: '10:25',
-    //   title: 'Welcome to K8s bakery!',
-    //   duration: '35 min',
-    //   speakers: [
-    //     {
-    //       name: 'Anushka Mittal',
-    //       // photo: AnushkaMittalPhoto,
-    //     },
-    //     {
-    //       name: 'Mritunjay Sharma',
-    //       // photo: MritunjaySharmaPhoto,
-    //     },
-    //   ],
-    //   presentation:
-    //     'Welcome to K8s bakery! Pods, Services, Deployments & other in house products are glaring at you but what if you want a cake that’s designed for your needs & occasion? Enter Custom Resource Definition! What is a CRD manifest and how to write that? Let’s bring this imaginative world of K8s bakery to KCD Utrecht with this session. In this talk, we will guide you in creating your first CRD that will help you create the object or what we call the cake of your desire! Let us answer WHAT a CRD means, WHEN you would write one, WHY & HOW the flexibility of CRDs allows you to define & manage custom resources that align with your specific ‘cake’ i.e. application requirements. A session on CRDs with an analogy of bakery will be incomplete without talking about the icing of controllers & operators in K8s. We will see how all the pieces fit together in writing a functional CRD in an interactive demo.',
-    // },
+    coincidedEvent: {
+      id: '03',
+      time: '10:25',
+      title: 'Doing Multi-Cloud the Easy Way... But should you? ',
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Nico Krijnen',
+          photo: NicoKrijnenPhoto,
+        },
+      ],
+      presentation:
+        "In today's rapidly evolving technological landscape, organizations are increasingly adopting cloud computing as a means to enhance scalability and flexibility. " +
+        'However, multi-cloud makes this a complex decision process. ' +
+        'Tools like Kubernetes, Terraform, Dapr and Wing simplify multi-cloud by providing a unified programming model that work seamlessly across different clouds. ' +
+        'That sounds great! Almost too good to be true? What are the trade-offs that they bring? Do they truly prevent vendor lock-in? ' +
+        'And what are you loosing by not making full use of what your cloud vendor has to offer?',
+    },
   },
   {
     time: '10:55',
@@ -312,41 +317,87 @@ const ITEMS = [
   {
     id: '14',
     time: '16:00',
-    title: '⚡️ Lightning Talks ⚡️',
+    title: 'Contributors Panel',
     duration: '35 min',
     speakers: [
       {
-        name: 'Marco Verleun',
-        photo: MarcoVerleunPhoto,
+        name: 'William Rizzo',
+        photo: WilliamRizzoPhoto,
       },
       {
-        name: 'Louëlla Creemers',
-        photo: LouellaCreemersPhoto,
+        name: 'Marcel Kerker',
+        photo: MarcelKerkerPhoto,
       },
       {
-        name: 'Serdar Kalaycı',
-        photo: SerdarKalayciPhoto,
+        name: 'Andrea Giardini',
+        photo: AndreaGiardiniPhoto,
       },
     ],
-    presentation:
-      'Short and interesting talks:<br/>' +
-      '<p class="text-xl md:text-lg font-semibold">⚡️ Find CVEs with ease</p>' +
-      '<p class="text-sm font-normal text-gray-400">By Marco Verleun</p>' +
-      "<p>In this session we'll explore some of the possibilities and tools that can be used to create SBOM files, analyze them (during CI/CD?) and even store them in a database.</p>" +
-      '<p class="text-xl md:text-lg font-semibold">⚡️ Docker & Kubernetes Unboxed<p/>' +
-      '<p class="text-sm font-normal text-gray-400">By Louëlla Creemers</p>' +
-      '<p>Have you ever been puzzled by terms like "Docker" and "Kubernetes"? If you have, you\'re not alone! In this lightning talk, let\'s simplify Docker and Kubernetes by using a simple analogy involving "boxes." and discover how Docker and Kubernetes can change the way you handle your projects. Bid farewell to the confusion and welcome the magic of containerization and automatic project management.</p>' +
-      '<p class="text-xl md:text-lg font-semibold">⚡️ Back to basics: 12 Factor App in Cloud Native Era</p>' +
-      '<p class="text-sm font-normal text-gray-400">By Serdar Kalaycı</p>' +
-      '<p>12 Factor App was first released 12 years ago, 3 years before Kubernetes was first released. Since then, the community has been eager to adopt Kubernetes itself as a platform, but the guideline to develop good cloud-native software has been neglected in comparison. Similar to the initial cloud movement, lifting and shifting existing workloads onto Kubernetes did not lead to cloud-native solutions, but made management and maintenance even more difficult. Today we will look at the lessons of the 12 Factor App and find out how these lessons make software run more smoothly on Kubernetes and how Kubernetes helps you develop 12 Factor Apps more easily.</p>',
+    presentation: 'Contributors Panel',
+    coincidedEvent: {
+      id: '15',
+      time: '16:00',
+      title: '⚡️ Lightning Talks ⚡️',
+      duration: '35 min',
+      speakers: [
+        {
+          name: 'Marco Verleun',
+          photo: MarcoVerleunPhoto,
+        },
+        {
+          name: 'Louëlla Creemers',
+          photo: LouellaCreemersPhoto,
+        },
+        {
+          name: 'Serdar Kalaycı',
+          photo: SerdarKalayciPhoto,
+        },
+      ],
+      presentation:
+        'Short and interesting talks:<br/>' +
+        '<p class="text-xl md:text-lg font-semibold">⚡️ Find CVEs with ease</p>' +
+        '<p class="text-sm font-normal text-gray-400">By Marco Verleun</p>' +
+        "<p>In this session we'll explore some of the possibilities and tools that can be used to create SBOM files, analyze them (during CI/CD?) and even store them in a database.</p>" +
+        '<p class="text-xl md:text-lg font-semibold">⚡️ Docker & Kubernetes Unboxed<p/>' +
+        '<p class="text-sm font-normal text-gray-400">By Louëlla Creemers</p>' +
+        '<p>Have you ever been puzzled by terms like "Docker" and "Kubernetes"? If you have, you\'re not alone! In this lightning talk, let\'s simplify Docker and Kubernetes by using a simple analogy involving "boxes." and discover how Docker and Kubernetes can change the way you handle your projects. Bid farewell to the confusion and welcome the magic of containerization and automatic project management.</p>' +
+        '<p class="text-xl md:text-lg font-semibold">⚡️ Back to basics: 12 Factor App in Cloud Native Era</p>' +
+        '<p class="text-sm font-normal text-gray-400">By Serdar Kalaycı</p>' +
+        '<p>12 Factor App was first released 12 years ago, 3 years before Kubernetes was first released. Since then, the community has been eager to adopt Kubernetes itself as a platform, but the guideline to develop good cloud-native software has been neglected in comparison. Similar to the initial cloud movement, lifting and shifting existing workloads onto Kubernetes did not lead to cloud-native solutions, but made management and maintenance even more difficult. Today we will look at the lessons of the 12 Factor App and find out how these lessons make software run more smoothly on Kubernetes and how Kubernetes helps you develop 12 Factor Apps more easily.</p>',
+    },
   },
+  // {
+  //   id: '15',
+  //   time: '16:00',
+  //   title: '⚡️ Lightning Talks ⚡️',
+  //   duration: '35 min',
+  //   speakers: [
+  //     {
+  //       name: 'Marco Verleun',
+  //       photo: MarcoVerleunPhoto,
+  //     },
+  //     {
+  //       name: 'Louëlla Creemers',
+  //       photo: LouellaCreemersPhoto,
+  //     },
+  //     {
+  //       name: 'Serdar Kalaycı',
+  //       photo: SerdarKalayciPhoto,
+  //     },
+  //   ],
+  //   presentation:
+  //     'Short and interesting talks:<br/>' +
+  //     '⚡ Find CVEs with ease<br/>' +
+  //     '⚡ Docker & Kubernetes Unboxed<br/>' +
+  //     '⚡ Back to basics: 12 Factor App in Cloud Native Era',
+  // },
   {
     time: '16:35',
     title: 'Short break',
     duration: '10 min',
   },
   {
-    id: '15',
+    id: '16',
     time: '16:45',
     title: 'Closing keynote',
     duration: '35 min',
