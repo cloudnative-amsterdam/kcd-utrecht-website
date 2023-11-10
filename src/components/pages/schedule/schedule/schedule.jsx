@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import Button from 'components/shared/button';
 import Modal from 'components/shared/modal';
 
+import AndreaGiardiniPhoto from './images/andrea-giardini-photo.jpg';
 import AndreaSoldinoPhoto from './images/andrea-soldino-photo.jpg';
 import BenoitSchipperPhoto from './images/benoit-schipper-photo.jpg';
 import GiuseppeGianquittoPhoto from './images/giuseppe-gianquitto-photo.jpg';
@@ -16,6 +17,7 @@ import LouellaCreemersPhoto from './images/louella-creemers-photo.jpg';
 import MarcelKerkerPhoto from './images/marcel-kerker-photo.jpg';
 import MarcoVerleunPhoto from './images/marco-verleun-photo.jpg';
 import MaximBurgerhoutPhoto from './images/maxim-burgerhout-photo.jpg';
+import NicoKrijnenPhoto from './images/nico-krijnen-photo.jpg';
 import NiravBhadradiyaPhoto from './images/nirav-bhadradiya-photo.jpg';
 import PeterVanEijkPhoto from './images/peter-van-eijk-photo.jpg';
 import RajalakshmiRajamuthuPhoto from './images/rajalakshmi-rajamuthu-photo.jpg';
@@ -103,7 +105,7 @@ const ITEMS = [
       speakers: [
         {
           name: 'Nico Krijnen',
-          // photo: AnushkaMittalPhoto,
+          photo: NicoKrijnenPhoto,
         },
       ],
       presentation:
@@ -328,7 +330,7 @@ const ITEMS = [
       },
       {
         name: 'Andrea Giardini',
-        // photo: AndreaGiardiniPhoto,
+        photo: AndreaGiardiniPhoto,
       },
     ],
     presentation: 'Contributors Panel',
