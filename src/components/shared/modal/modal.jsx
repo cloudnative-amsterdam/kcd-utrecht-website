@@ -208,9 +208,11 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                           alt={name}
                           loading="lazy"
                         />
-                        <div className="whitespace-nowrap text-sm font-medium leading-none sm:whitespace-normal">
-                          {name}
-                        </div>
+                        {speakers.length <= 3 && (
+                          <div className="whitespace-nowrap text-sm font-medium leading-none sm:whitespace-normal">
+                            {name}
+                          </div>
+                        )}
                       </span>
                       // </Link>
                     ))}
