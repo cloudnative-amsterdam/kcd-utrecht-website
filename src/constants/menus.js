@@ -6,7 +6,7 @@ const MENUS = {
     { text: 'Schedule', ...LINKS.schedule },
     // { text: 'Sponsors', ...LINKS.sponsors },
     // { text: 'Workshops', ...LINKS.workshops },
-    // { text: 'Podcast', ...LINKS.podcast },
+    { text: 'Podcast', ...LINKS.podcast },
     // { text: 'Archive', ...LINKS.archive },
   ],
   footer: [
@@ -21,7 +21,7 @@ const MENUS = {
     // { text: 'Call for Proposal', ...LINKS.proposal },
     // { text: 'Workshops', ...LINKS.workshops },
     // { text: 'Sponsors', ...LINKS.sponsors },
-    // { text: 'Podcast', ...LINKS.podcast },
+    { text: 'Podcast', ...LINKS.podcast },
     // { text: 'Archive', ...LINKS.archive },
   ],
 };
