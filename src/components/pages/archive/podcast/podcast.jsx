@@ -5,7 +5,7 @@ import Button from 'components/shared/button';
 
 const TITLE = 'Podcast';
 const DESCRIPTION =
-  'Discover the Kubernetes Universe at Kubernetes Community Days Utrecht 2023, powered by b-nova. Tune in to the podcast episode where industry leaders and developers shape the future of container orchestration.';
+  'Discover the Kubernetes Universe at Kubernetes Community Days Utrecht 2023, powered by De Nederlands Kubernetes Podcast. Tune in to the podcast episode where industry leaders and developers shape the future of container orchestration.';
 
 const Podcast = () => (
   <section className="safe-paddings py-40 md:py-24 sm:py-16">
@@ -15,7 +15,7 @@ const Podcast = () => (
           <StaticImage
             className="rounded-[4px] shadow-xl"
             imgClassName="rounded-[4px]"
-            src="../../podcast/hero/img/podcast-cover.jpg"
+            src="../../podcast/hero/img/podcast-cover.png"
             alt="Podcast cover"
           />
         </div>
