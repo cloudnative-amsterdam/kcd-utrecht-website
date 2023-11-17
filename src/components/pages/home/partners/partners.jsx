@@ -2,18 +2,20 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
-import WorkingSpirit from './images/working-spirit.png';
 import KubeCareers from './images/kube-careers.png';
+import KubernetesPodcast from './images/kubernetes-podcast.png';
 import KubeEvents from './images/kubevents.svg';
 import RebelAstronaut from './images/rebel-astronaut.png';
+import WorkingSpirit from './images/working-spirit.png';
 
 const TITLE = 'Community & Media Partners';
 
 const ITEMS = [
-  { icon: WorkingSpirit, url: 'https://www.workingspirit.nl' },
   { icon: KubeCareers, url: 'https://kube.careers/' },
   { icon: KubeEvents, url: 'https://kube.events/' },
+  { icon: KubernetesPodcast, url: 'https://www.k8spodcast.nl/' },
   { icon: RebelAstronaut, url: 'https://rebelastronaut.co.uk/' },
+  { icon: WorkingSpirit, url: 'https://www.workingspirit.nl' },
 ];
 
 const Partners = () => (
