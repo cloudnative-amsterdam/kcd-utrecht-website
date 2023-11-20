@@ -26,6 +26,7 @@ const Venue = () => (
           <u>Jaarbeurs</u>
         </Link>
       </p>
+      <img src="./images/route-to-event.png" />
       {/* <p className="mt-7">
         Watch all the speakers’ sessions videos from December 1, 2023 on{' '}
         <Link className="font-semibold" to="/archive" theme="blue-underlined">
