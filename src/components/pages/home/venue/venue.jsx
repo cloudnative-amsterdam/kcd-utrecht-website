@@ -3,6 +3,8 @@ import React from 'react';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links.js';
 
+import RoutePic from './images/route-to-event.png';
+
 const Venue = () => (
   <section className="safe-paddings bg-white py-40 pb-20 md:py-24 sm:py-16">
     <div className="container-md text-2xl text-primary-1 sm:text-lg">
@@ -26,7 +28,7 @@ const Venue = () => (
           <u>Jaarbeurs</u>
         </Link>
       </p>
-      <img src="./images/route-to-event.png" />
+      <img src={RoutePic} alt="Route to event" />
       {/* <p className="mt-7">
         Watch all the speakers’ sessions videos from December 1, 2023 on{' '}
         <Link className="font-semibold" to="/archive" theme="blue-underlined">
