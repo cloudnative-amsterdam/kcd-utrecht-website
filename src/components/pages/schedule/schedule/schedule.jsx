@@ -408,7 +408,7 @@ const ITEMS = [
   {
     id: '16',
     time: '16:45',
-    title: 'Closing keynote',
+    title: 'The Power of Community: A tale about Anxiety, Ambition and Allies',
     duration: '35 min',
     isKeynote: true,
     speakers: [
@@ -417,7 +417,9 @@ const ITEMS = [
         photo: SeviKarakulakPhoto,
       },
     ],
-    presentation: 'No abstract available yet.',
+    presentation:
+      'In the stormy waters of anxiety and burnout, my story is an epitome to the transformational power of community in our personal and professional lives. As a single parent in a foreign land, I found myself fighting different battles at the same time, leading me to the brink of burnout.<br/><br/>' +
+      'In my darkest hours, it was the support and wisdom of a diverse community that enlightened the path to recovery and resilience. This keynote is more than a personal narrative, it is a universal call to recognize the silent struggles many face and the profound impact of community support in overcoming life’s challenges.',
   },
   {
     time: '17:30',
