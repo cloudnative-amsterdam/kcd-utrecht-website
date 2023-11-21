@@ -8,7 +8,7 @@ import Edb from 'icons/edb.svg';
 import Fullstaq from 'icons/fullstaq.svg';
 import HcsCompany from 'icons/hcs-company.svg';
 import Isovalent from 'icons/isovalent.svg';
-import PaloAlto from 'icons/paloalto.svg';
+import PaloAlto from 'icons/palo-alto.svg';
 import Rabobank from 'icons/rabobank.svg';
 import Rancher from 'icons/rancher.svg';
 import StackState from 'icons/stackstate.svg';
