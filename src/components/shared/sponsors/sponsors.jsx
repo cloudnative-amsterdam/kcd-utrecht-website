@@ -22,7 +22,7 @@ const ITEMS = [
       { icon: Fullstaq, url: 'https://www.fullstaq.com/' },
       { icon: HcsCompany, url: 'https://www.hcs-company.com/' },
       { icon: Isovalent, url: 'https://isovalent.com/' },
-      { icon: PaloAlto, url: 'https://isovalent.com/' },
+      { icon: PaloAlto, url: 'https://www.paloaltonetworks.com/' },
       { icon: Rabobank, url: 'https://www.rabobank.com/' },
       { icon: Rancher, url: 'https://www.rancher.com/' },
       { icon: StackState, url: 'https://www.stackstate.com/' },
