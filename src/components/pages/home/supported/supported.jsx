@@ -2,25 +2,13 @@ import React from 'react';
 
 import Link from 'components/shared/link';
 
-import KubeCareers from './images/kube-careers.png';
-import KubernetesPodcast from './images/kubernetes-podcast.png';
-import KubeEvents from './images/kubevents.svg';
-import Meetup from './images/meetup.png';
-import RebelAstronaut from './images/rebel-astronaut.png';
-import WorkingSpirit from './images/working-spirit.png';
+import CNCF from './images/cloudnative.jpeg';
 
-const TITLE = 'Community & Media Partners';
+const TITLE = 'Supported By';
 
-const ITEMS = [
-  { icon: KubeCareers, url: 'https://kube.careers/' },
-  { icon: KubeEvents, url: 'https://kube.events/' },
-  { icon: KubernetesPodcast, url: 'https://www.k8spodcast.nl/' },
-  { icon: RebelAstronaut, url: 'https://rebelastronaut.co.uk/' },
-  { icon: WorkingSpirit, url: 'https://www.workingspirit.nl' },
-  { icon: Meetup, url: 'https://www.meetup.com/Dutch-Kubernetes-Meetup/' },
-];
+const ITEMS = [{ icon: CNCF, url: 'https://cncf.io/' }];
 
-const Partners = () => (
+const Supported = () => (
   <section className="safe-paddings relative bg-white pt-24 pb-48 lg:pb-40 md:pb-32 sm:pb-24 sm:pt-16">
     <div className="container text-center">
       <h2 className="text-6xl font-bold leading-denser text-primary-1">{TITLE}</h2>
@@ -30,7 +18,7 @@ const Partners = () => (
           <li className="flex min-h-[80px] min-w-[280px] items-center justify-center" key={index}>
             <Link className="flex h-full w-full items-center justify-center" to={url}>
               <img
-                className="max-w-[210px]"
+                className="max-w-[610px]"
                 src={icon}
                 width="auto"
                 height="auto"
@@ -45,4 +33,4 @@ const Partners = () => (
   </section>
 );
 
-export default Partners;
+export default Supported;
