@@ -4,6 +4,7 @@ import React from 'react';
 import Hero from 'components/pages/home/hero';
 import Partners from 'components/pages/home/partners';
 // import Speakers from 'components/pages/home/speakers';
+import Supported from 'components/pages/home/supported';
 import Venue from 'components/pages/home/venue';
 // import Workshops from 'components/pages/home/workshops';
 import Layout from 'components/shared/layout';
@@ -16,6 +17,7 @@ const HomePage = () => (
     <Venue />
     {/* <Speakers location={location} /> */}
     {/* <Workshops /> */}
+    <Supported />
     <Sponsors />
     <Partners />
   </Layout>
