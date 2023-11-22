@@ -1,7 +1,7 @@
 import clsx from 'clsx';
 import React from 'react';
 
-import Button from 'components/shared/button';
+// import Button from 'components/shared/button';
 import Link from 'components/shared/link';
 import LINKS from 'constants/links';
 import Edb from 'icons/edb.svg';
@@ -39,7 +39,7 @@ const Sponsors = () => (
       <h2 className="text-6xl font-bold leading-denser text-primary-1" id={LINKS.sponsors.id}>
         {TITLE}
       </h2>
-      <p className="mx-auto mt-6 max-w-[800px] text-lg leading-normal text-primary-1">
+      {/* <p className="mx-auto mt-6 max-w-[800px] text-lg leading-normal text-primary-1">
         <strong>Kubernetes Community Days</strong> is more than an event; it's a community-driven
         movement, and we invite you to be a vital contributor to its success. Connect with us today
         to explore how you can make a lasting impact on the future of cloud-native computing. Please
@@ -55,7 +55,7 @@ const Sponsors = () => (
       </p>
       <Button className="mt-7" to="mailto:hello@kcdutrecht.nl" theme="primary" size="lg">
         Contact us
-      </Button>
+      </Button> */}
 
       <ul className="mt-2 flex flex-col">
         {ITEMS.map(({ logos, cardClassname, iconClassname }, index) => (
