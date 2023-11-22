@@ -50,7 +50,7 @@ const ITEMS = [
     id: '01',
     time: '9:40',
     title: 'Empowering The Teams, Avoiding Micromanagement: The Balance of Leadership',
-    duration: '30 min',
+    duration: '35 min',
     isKeynote: true,
     speakers: [
       {
@@ -69,13 +69,13 @@ const ITEMS = [
       'letting innovation soar.',
   },
   {
-    time: '10:10',
+    time: '10:15',
     title: 'Short break',
-    duration: '10 min',
+    duration: '5 min',
   },
   {
     id: '02',
-    time: '10:25',
+    time: '10:20',
     title: 'Edge of Tomorrow',
     duration: '35 min',
     speakers: [
@@ -100,7 +100,7 @@ const ITEMS = [
       'using green energy resources, mobility and modern communication methods.',
     coincidedEvent: {
       id: '03',
-      time: '10:25',
+      time: '10:20',
       title: 'Doing Multi-Cloud the Easy Way... But should you? ',
       duration: '35 min',
       speakers: [
@@ -120,11 +120,11 @@ const ITEMS = [
   {
     time: '10:55',
     title: 'Morning break',
-    duration: '20 min',
+    duration: '30 min',
   },
   {
     id: '04',
-    time: '11:15',
+    time: '11:25',
     title: 'A Greener, Cost-Effective Cloud with Serverless WebAssembly',
     duration: '35 min',
     speakers: [
@@ -138,7 +138,7 @@ const ITEMS = [
       'Wasm modules are just as secure as containers with default sandboxing, yet they start almost instantly (in microseconds). In this session, we discuss why Wasm is the ideal & greenest unit of compute for Serverless applications and how you can get started using Serverless Wasm with Spin - an open source developer tool. We’ll demo running AI inferencing Spin applications and discuss how it also enables better GPU resource sharing. By the end, you’ll have an understanding of the characteristics that make Wasm a cost-effective and sustainable unit for a greener cloud.',
     coincidedEvent: {
       id: '05',
-      time: '11:15',
+      time: '11:25',
       duration: '35 min',
       title: 'Killing PETs with CPET at a Dutch government organization is central to our story. ',
       speakers: [
@@ -160,13 +160,13 @@ const ITEMS = [
     },
   },
   {
-    time: '11:50',
+    time: '12:00',
     title: 'Short break',
-    duration: '10 min',
+    duration: '5 min',
   },
   {
     id: '06',
-    time: '12:00',
+    time: '12:05',
     title: 'Cilium: divide et impera the networking stack',
     duration: '35 min',
     speakers: [
@@ -180,7 +180,7 @@ const ITEMS = [
       'This talk walks through our journey from using disconnected point solutions like Flannel for networking, NSG for network segmentation, and Fortinet for firewalling towards a more integrated and automated set up with just Cilium. It will cover how we implemented network policy first with Calico and then with Cilium to separate tenants and how we codified our network security to make it self service for developers. The audience will walk away understanding how Cilium can enable them to simplify their networking stack and automate security in the fast moving cloud native world.',
     coincidedEvent: {
       id: '07',
-      time: '12:00',
+      time: '12:05',
       duration: '35 min',
       title: 'Socio-technical challenges of adopting Kubernetes',
       speakers: [
@@ -200,13 +200,13 @@ const ITEMS = [
     },
   },
   {
-    time: '12:35',
+    time: '12:40',
     title: 'Lunch',
     duration: '1 hour',
   },
   {
     id: '08',
-    time: '13:35',
+    time: '13:40',
     title: 'Migration to Kubernetes at Wehkamp',
     duration: '35 min',
     speakers: [
@@ -220,7 +220,7 @@ const ITEMS = [
       'This sounds like an impossible story where somehow everything gets better, which is usually not how such huge a change turns out. In this talk, we will present where we came from, what components we cobbled together and how many attempts it took to actually migrate a live system.',
     coincidedEvent: {
       id: '09',
-      time: '13:35',
+      time: '13:40',
       title: 'Postgres on Kubernetes: the time is now!',
       duration: '35 min',
       speakers: [
@@ -234,9 +234,9 @@ const ITEMS = [
     },
   },
   {
-    time: '14:10',
+    time: '14:15',
     title: 'Short break',
-    duration: '10 min',
+    duration: '5 min',
   },
   {
     id: '10',
@@ -277,11 +277,11 @@ const ITEMS = [
   {
     time: '14:55',
     title: 'Afternoon break',
-    duration: '20 min',
+    duration: '30 min',
   },
   {
     id: '12',
-    time: '15:15',
+    time: '15:25',
     title: 'Our journey in building a gamified cyber security platform with k8s',
     duration: '35 min',
     speakers: [
@@ -297,7 +297,7 @@ const ITEMS = [
       'Topics we’d discuss include architectural choices, tools, migration issues, challenges of working with student teams, mistakes that we made, production war stories, stuff that we are proud of, and so on.',
     coincidedEvent: {
       id: '13',
-      time: '15:15',
+      time: '15:25',
       title: 'Dev to the Future - Improving Developer Experience',
       duration: '35 min',
       speakers: [
@@ -311,13 +311,13 @@ const ITEMS = [
     },
   },
   {
-    time: '15:50',
+    time: '16:00',
     title: 'Short break',
-    duration: '10 min',
+    duration: '5 min',
   },
   {
     id: '14',
-    time: '16:00',
+    time: '16:05',
     title: 'Contributors Panel',
     duration: '35 min',
     speakers: [
@@ -337,7 +337,7 @@ const ITEMS = [
     presentation: 'Contributors Panel',
     coincidedEvent: {
       id: '15',
-      time: '16:00',
+      time: '16:05',
       title: '⚡️ Lightning Talks ⚡️',
       duration: '35 min',
       speakers: [
@@ -375,35 +375,10 @@ const ITEMS = [
         'Or… should we? Join me for an exploration of Cloud Native, Data on Kubernetes, why databases in containers make much sense, and why much of the fear is from a previous era. In this talk, you will see why more and more organizations look at Cloud Native infrastructures for deploying critical data workloads. You will explore options and opportunities for creating modern application architectures without having to fall into a split between your application and your back end.</p>',
     },
   },
-  // {
-  //   id: '15',
-  //   time: '16:00',
-  //   title: '⚡️ Lightning Talks ⚡️',
-  //   duration: '35 min',
-  //   speakers: [
-  //     {
-  //       name: 'Marco Verleun',
-  //       photo: MarcoVerleunPhoto,
-  //     },
-  //     {
-  //       name: 'Louëlla Creemers',
-  //       photo: LouellaCreemersPhoto,
-  //     },
-  //     {
-  //       name: 'Serdar Kalaycı',
-  //       photo: SerdarKalayciPhoto,
-  //     },
-  //   ],
-  //   presentation:
-  //     'Short and interesting talks:<br/>' +
-  //     '⚡ Find CVEs with ease<br/>' +
-  //     '⚡ Docker & Kubernetes Unboxed<br/>' +
-  //     '⚡ Back to basics: 12 Factor App in Cloud Native Era',
-  // },
   {
-    time: '16:35',
+    time: '16:40',
     title: 'Short break',
-    duration: '10 min',
+    duration: '5 min',
   },
   {
     id: '16',
