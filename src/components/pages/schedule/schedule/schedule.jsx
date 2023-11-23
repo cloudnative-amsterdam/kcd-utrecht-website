@@ -47,13 +47,14 @@ const ITEMS = [
     duration: '30 min',
   },
   {
-    id: '01',
+    id: '1',
     time: '9:40',
     title: 'Empowering The Teams, Avoiding Micromanagement: The Balance of Leadership',
     duration: '35 min',
     isKeynote: true,
     speakers: [
       {
+        id: '1',
         name: 'Sarah Gruneisen',
         photo: SarahGruneisenPhoto,
       },
@@ -80,10 +81,12 @@ const ITEMS = [
     duration: '35 min',
     speakers: [
       {
+        id: '2',
         name: 'Stefan van Gastel',
         photo: StefanVanGastelPhoto,
       },
       {
+        id: '3',
         name: 'John Stroosnijder',
         photo: JohnStroosnijderPhoto,
       },
@@ -105,6 +108,7 @@ const ITEMS = [
       duration: '35 min',
       speakers: [
         {
+          id: '4',
           name: 'Nico Krijnen',
           photo: NicoKrijnenPhoto,
         },
@@ -129,6 +133,7 @@ const ITEMS = [
     duration: '35 min',
     speakers: [
       {
+        id: '5',
         name: 'Sohan Maheshwar',
         photo: SohanMaheshwarPhoto,
       },
@@ -143,14 +148,17 @@ const ITEMS = [
       title: 'Killing PETs with CPET at a Dutch government organization is central to our story. ',
       speakers: [
         {
+          id: '6',
           name: 'Jan Willem Van Hermon',
           photo: JanWillemPhoto,
         },
         {
+          id: '7',
           name: 'Sebastiaan Mannem',
           photo: SebastiaanMannemPhoto,
         },
         {
+          id: '8',
           name: 'Benoit Schipper',
           photo: BenoitSchipperPhoto,
         },
@@ -171,6 +179,7 @@ const ITEMS = [
     duration: '35 min',
     speakers: [
       {
+        id: '9',
         name: 'Remy Simons',
         photo: RemySimonsPhoto,
       },
@@ -185,6 +194,7 @@ const ITEMS = [
       title: 'Socio-technical challenges of adopting Kubernetes',
       speakers: [
         {
+          id: '10',
           name: 'Giuseppe Gianquitto',
           photo: GiuseppeGianquittoPhoto,
         },
@@ -211,6 +221,7 @@ const ITEMS = [
     duration: '35 min',
     speakers: [
       {
+        id: '11',
         name: 'John Keates',
         photo: JohnKeatesPhoto,
       },
@@ -225,6 +236,7 @@ const ITEMS = [
       duration: '35 min',
       speakers: [
         {
+          id: '12',
           name: 'Maxim Burgerhout',
           photo: MaximBurgerhoutPhoto,
         },
@@ -245,10 +257,12 @@ const ITEMS = [
     duration: '35 min',
     speakers: [
       {
+        id: '13',
         name: 'Andrea Soldino',
         photo: AndreaSoldinoPhoto,
       },
       {
+        id: '14',
         name: 'Shweta Vohra',
         photo: ShwetaVohraPhoto,
       },
@@ -262,10 +276,12 @@ const ITEMS = [
       duration: '35 min',
       speakers: [
         {
+          id: '15',
           name: 'Rajalakshmi Rajamuthu',
           photo: RajalakshmiRajamuthuPhoto,
         },
         {
+          id: '16',
           name: 'Nirav Bhadradiya',
           photo: NiravBhadradiyaPhoto,
         },
@@ -286,6 +302,7 @@ const ITEMS = [
     duration: '35 min',
     speakers: [
       {
+        id: '17',
         name: 'Peter van Eijk',
         photo: PeterVanEijkPhoto,
       },
@@ -302,6 +319,7 @@ const ITEMS = [
       duration: '35 min',
       speakers: [
         {
+          id: '18',
           name: 'Kasra Amirsarvari',
           photo: KasraAmirsarvariPhoto,
         },
@@ -322,14 +340,17 @@ const ITEMS = [
     duration: '35 min',
     speakers: [
       {
+        id: '19',
         name: 'William Rizzo',
         photo: WilliamRizzoPhoto,
       },
       {
+        id: '20',
         name: 'Marcel Kerker',
         photo: MarcelKerkerPhoto,
       },
       {
+        id: '21',
         name: 'Andrea Giardini',
         photo: AndreaGiardiniPhoto,
       },
@@ -342,18 +363,22 @@ const ITEMS = [
       duration: '35 min',
       speakers: [
         {
+          id: '22',
           name: 'Marco Verleun',
           photo: MarcoVerleunPhoto,
         },
         {
+          id: '23',
           name: 'Louëlla Creemers',
           photo: LouellaCreemersPhoto,
         },
         {
+          id: '24',
           name: 'Serdar Kalaycı',
           photo: SerdarKalayciPhoto,
         },
         {
+          id: '25',
           name: 'Jan Karremans',
           photo: JanKarremansPhoto,
         },
@@ -388,6 +413,7 @@ const ITEMS = [
     isKeynote: true,
     speakers: [
       {
+        id: '26',
         name: 'Sevi Karakulak',
         photo: SeviKarakulakPhoto,
       },

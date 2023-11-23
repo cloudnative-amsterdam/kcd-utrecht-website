@@ -18,9 +18,9 @@ export default {
     homeTo: null,
   },
   speakers: {
-    to: `/#${getAnchor('Speakers')}`,
+    to: `/speakers#${getAnchor('Speakers')}`,
     id: getAnchor('Speakers'),
-    homeTo: null,
+    homeTo: '/speakers',
   },
   workshops: {
     to: '/workshops',
