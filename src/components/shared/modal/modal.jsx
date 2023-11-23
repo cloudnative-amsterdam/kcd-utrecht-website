@@ -40,7 +40,7 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
     id = '',
     name = '',
     photo = '',
-    position = '',
+    // position = '',
     content = '',
     twitterUrl = '',
     linkedInUrl = '',
@@ -53,7 +53,7 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
     duration = '',
     presentation = '',
     speakers = [],
-    isCoincidedEvent = false,
+    // isCoincidedEvent = false,
     activePhoto = '',
     sliderRef = null,
     sliderIndex = 0,
@@ -190,31 +190,31 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                   </span>
                   {speakers.length > 0 &&
                     speakers.map(({ id: speakerId, name, photo }, index) => (
-                      // <Link
-                      //   className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 hover:text-blue-1"
-                      //   to="/#speaker"
-                      //   state={{ modalId: speakerId || id }}
-                      //   key={index}
-                      // >
-                      <span
-                        id={`speaker-${speakerId || id}`}
+                      <Link
+                        className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 hover:text-blue-1"
+                        to="/speakers#speaker"
+                        state={{ modalId: (speakerId || id) - 1 }}
                         key={index}
-                        className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3"
                       >
-                        <img
-                          className="h-7 w-7 rounded-full"
-                          src={photo || UserPhoto}
-                          width={28}
-                          alt={name}
-                          loading="lazy"
-                        />
-                        {speakers.length <= 3 && (
-                          <div className="whitespace-nowrap text-sm font-medium leading-none sm:whitespace-normal">
-                            {name}
-                          </div>
-                        )}
-                      </span>
-                      // </Link>
+                        <span
+                          id={`speaker-${speakerId || id}`}
+                          key={index}
+                          className="relative ml-8 inline-flex items-center gap-x-2 text-left text-lg font-semibold leading-normal text-primary-5 transition-colors duration-200 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3"
+                        >
+                          <img
+                            className="h-7 w-7 rounded-full"
+                            src={photo || UserPhoto}
+                            width={28}
+                            alt={name}
+                            loading="lazy"
+                          />
+                          {speakers.length <= 3 && (
+                            <div className="whitespace-nowrap text-sm font-medium leading-none sm:whitespace-normal">
+                              {name}
+                            </div>
+                          )}
+                        </span>
+                      </Link>
                     ))}
                 </div>
                 <h2 className="mt-7 text-2xl font-semibold leading-tight tracking-[-0.01em] text-primary-1 sm:text-lg">
@@ -241,10 +241,10 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                     >
                       {name}
                     </h2>
-                    <p
+                    {/* <p
                       className="mt-2 text-lg font-semibold leading-normal sm:text-base"
                       dangerouslySetInnerHTML={{ __html: position }}
-                    />
+                    /> */}
                   </div>
                 </div>
                 <div
@@ -345,7 +345,7 @@ const Modal = ({ isVisible, modalData, onModalHide, isPresentationShow, isVideoM
                     <Link
                       className="mt-3 block text-left text-lg font-semibold leading-normal text-primary-1 transition-colors duration-200 hover:text-blue-1"
                       to="/schedule"
-                      state={{ modalId: id, isCoincidedEvent }}
+                      // state={{ modalId: id, isCoincidedEvent }}
                     >
                       {title}
                     </Link>
