@@ -77,6 +77,10 @@ export default {
     to: 'https://www.google.com/maps/search/300+Jaarbeursboulevard+3521+BC+Utrecht/',
     target: '_blank',
   },
+  parkingInfo: {
+    to: 'https://www.jaarbeurs.nl/sites/default/files/2023-06/Plattegrond_Jaarbeursgebied%20ring%20volledige%20details%20rode%20balk_%202023_zonderP1Hal1.pdf',
+    target: '_blank',
+  },
   youtube: {
     to: 'https://www.youtube.com/@cncf',
     target: '_blank',

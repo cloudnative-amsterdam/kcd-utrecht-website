@@ -27,6 +27,10 @@ const Venue = () => (
         <Link {...LINKS.googlemaps}>
           <u>Jaarbeurs</u>
         </Link>
+        , for parking info view
+        <Link {...LINKS.parkingInfo}>
+          <u> Jaarbeurs plattegrond</u>
+        </Link>
       </p>
       <img src={RoutePic} alt="Route to event" className="rounded-[4px]" />
       {/* <p className="mt-7">
