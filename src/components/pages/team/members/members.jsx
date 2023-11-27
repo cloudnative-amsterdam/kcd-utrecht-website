@@ -13,7 +13,9 @@ import MegStefouliPhoto from './images/meg-stefouli-photo.png';
 import PabloMusaPhoto from './images/pablo-musa-photo.png';
 import PavelChunyayevPhoto from './images/pavel-chunyayev-photo.png';
 import RajeshGunasekaranPhoto from './images/rajesh-gunasekaran-photo.png';
+import RonaldKersPhoto from './images/ronald-kers-photo.png';
 import SerkanCapkanPhoto from './images/serkan-capkan-photo.jpeg';
+import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
 
 const ITEMS = [
@@ -88,6 +90,18 @@ const ITEMS = [
     position: 'Head of Engineering at 2Solar',
     photo: PavelChunyayevPhoto,
     url: 'https://www.linkedin.com/in/pavelchunyayev/',
+  },
+  {
+    name: 'Sevi Karakulak',
+    position: 'Engineering Lead at Container Solutions',
+    photo: SeviKarakulakPhoto,
+    url: 'https://www.linkedin.com/in/sevikarakulak/',
+  },
+  {
+    name: 'Ronald Kers',
+    position: 'Content Creator at ACC ICT',
+    photo: RonaldKersPhoto,
+    url: 'https://www.linkedin.com/in/ronaldkers/',
   },
 ];
 
