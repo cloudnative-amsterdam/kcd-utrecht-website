@@ -4,15 +4,15 @@ import React from 'react';
 import Link from 'components/shared/link';
 
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
+import CarlosMestrePhoto from './images/carlos-mestre-photo.jpeg';
 import LucaCamphuisenPhoto from './images/luca-camphuisen-photo.png';
 import MarcelKerkerPhoto from './images/marcel-kerker-photo.png';
 import MatteoBianchiPhoto from './images/matteo-bianchi-photo.png';
+import MegStefouliPhoto from './images/meg-stefouli-photo.png';
 import PabloMusaPhoto from './images/pablo-musa-photo.png';
 import RajeshGunasekaranPhoto from './images/rajesh-gunasekaran-photo.png';
-import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
 import SerkanCapkanPhoto from './images/serkan-capkan-photo.jpeg';
-import CarlosMestrePhoto from './images/carlos-mestre-photo.jpeg';
-
+import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
 
 const ITEMS = [
   {
@@ -62,13 +62,19 @@ const ITEMS = [
     position: 'Solutions Architect at Cloutive',
     photo: SerkanCapkanPhoto,
     url: 'https://www.linkedin.com/in/serkancapkan/',
-  },  
+  },
   {
     name: 'Carlos Mestre del Pino',
     position: 'Platform Engineering Consultant at ITQ',
     photo: CarlosMestrePhoto,
     url: 'https://www.linkedin.com/in/mestredelpino/',
-  },  
+  },
+  {
+    name: 'Meg Stefouli',
+    position: 'CNCF Student and KCD Organizer',
+    photo: MegStefouliPhoto,
+    url: 'https://www.linkedin.com/in/megstefuli/',
+  },
 ];
 
 const LOGOS = [

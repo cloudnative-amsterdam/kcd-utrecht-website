@@ -8,6 +8,7 @@ const MENUS = {
     // { text: 'Workshops', ...LINKS.workshops },
     { text: 'Podcast', ...LINKS.podcast },
     // { text: 'Archive', ...LINKS.archive },
+    { text: 'Team', ...LINKS.team },
   ],
   footer: [
     { text: 'Code of Conduct', ...LINKS.conduct },
