@@ -5,13 +5,17 @@ import Link from 'components/shared/link';
 
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
 import CarlosMestrePhoto from './images/carlos-mestre-photo.jpeg';
+import FahdEkadioinPhoto from './images/fahd-ekadioin-photo.png';
 import LucaCamphuisenPhoto from './images/luca-camphuisen-photo.png';
 import MarcelKerkerPhoto from './images/marcel-kerker-photo.png';
 import MatteoBianchiPhoto from './images/matteo-bianchi-photo.png';
 import MegStefouliPhoto from './images/meg-stefouli-photo.png';
 import PabloMusaPhoto from './images/pablo-musa-photo.png';
+import PavelChunyayevPhoto from './images/pavel-chunyayev-photo.png';
 import RajeshGunasekaranPhoto from './images/rajesh-gunasekaran-photo.png';
+import RonaldKersPhoto from './images/ronald-kers-photo.png';
 import SerkanCapkanPhoto from './images/serkan-capkan-photo.jpeg';
+import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
 
 const ITEMS = [
@@ -74,6 +78,30 @@ const ITEMS = [
     position: 'CNCF Student and KCD Organizer',
     photo: MegStefouliPhoto,
     url: 'https://www.linkedin.com/in/megstefuli/',
+  },
+  {
+    name: 'Fahd Ekadioin',
+    position: 'Partner Engineer at Google',
+    photo: FahdEkadioinPhoto,
+    url: 'https://www.linkedin.com/in/fahdekadioin/',
+  },
+  {
+    name: 'Pavel Chunyayev',
+    position: 'Head of Engineering at 2Solar',
+    photo: PavelChunyayevPhoto,
+    url: 'https://www.linkedin.com/in/pavelchunyayev/',
+  },
+  {
+    name: 'Sevi Karakulak',
+    position: 'Engineering Lead at Container Solutions',
+    photo: SeviKarakulakPhoto,
+    url: 'https://www.linkedin.com/in/sevikarakulak/',
+  },
+  {
+    name: 'Ronald Kers',
+    position: 'Content Creator at ACC ICT',
+    photo: RonaldKersPhoto,
+    url: 'https://www.linkedin.com/in/ronaldkers/',
   },
 ];
 
