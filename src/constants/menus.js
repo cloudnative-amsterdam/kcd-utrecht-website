@@ -23,6 +23,7 @@ const MENUS = {
     // { text: 'Workshops', ...LINKS.workshops },
     // { text: 'Sponsors', ...LINKS.sponsors },
     { text: 'Podcast', ...LINKS.podcast },
+    { text: 'Team', ...LINKS.team },
     // { text: 'Archive', ...LINKS.archive },
   ],
 };
