@@ -6,6 +6,7 @@ import Link from 'components/shared/link';
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
 import CarlosMestrePhoto from './images/carlos-mestre-photo.jpeg';
 import FahdEkadioinPhoto from './images/fahd-ekadioin-photo.png';
+import KarlaFeijooPhoto from './images/karla-feijoo-photo.png';
 import LucaCamphuisenPhoto from './images/luca-camphuisen-photo.png';
 import MarcelKerkerPhoto from './images/marcel-kerker-photo.png';
 import MatteoBianchiPhoto from './images/matteo-bianchi-photo.png';
@@ -102,6 +103,12 @@ const ITEMS = [
     position: 'Content Creator at ACC ICT',
     photo: RonaldKersPhoto,
     url: 'https://www.linkedin.com/in/ronaldkers/',
+  },
+  {
+    name: 'Karla Valeria Feijoo',
+    position: 'Sr. Field Marketing Manager at Isovalent',
+    photo: KarlaFeijooPhoto,
+    url: 'https://www.linkedin.com/in/karla-valeria-feijoo-54934422/',
   },
 ];
 
