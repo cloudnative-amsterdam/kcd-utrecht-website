@@ -15,6 +15,7 @@ import PabloMusaPhoto from './images/pablo-musa-photo.png';
 import PavelChunyayevPhoto from './images/pavel-chunyayev-photo.png';
 import RajeshGunasekaranPhoto from './images/rajesh-gunasekaran-photo.png';
 import RonaldKersPhoto from './images/ronald-kers-photo.png';
+import SaifeddineRajhiPhoto from './images/saifeddine-rajhi-photo.png';
 import SerkanCapkanPhoto from './images/serkan-capkan-photo.jpeg';
 import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
@@ -109,6 +110,12 @@ const ITEMS = [
     position: 'Sr. Field Marketing Manager at Isovalent',
     photo: KarlaFeijooPhoto,
     url: 'https://www.linkedin.com/in/karla-valeria-feijoo-54934422/',
+  },
+  {
+    name: 'Saifeddine Rajhi',
+    position: 'Sr. SRE engineer at Takeaway.com JET',
+    photo: SaifeddineRajhiPhoto,
+    url: 'https://www.linkedin.com/in/rajhi-saif/',
   },
 ];
 
