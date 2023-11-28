@@ -2,7 +2,7 @@
 import React from 'react';
 
 import Hero from 'components/pages/schedule/hero';
-import Schedule from 'components/pages/schedule/schedule';
+import Schedule from 'components/pages/schedule/schedule/schedule';
 import Layout from 'components/shared/layout';
 import SEO from 'components/shared/seo';
 import Sponsors from 'components/shared/sponsors';
