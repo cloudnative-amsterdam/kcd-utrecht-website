@@ -19,6 +19,7 @@ import SaifeddineRajhiPhoto from './images/saifeddine-rajhi-photo.png';
 import SerkanCapkanPhoto from './images/serkan-capkan-photo.jpeg';
 import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
+import CatalinJoraPhoto from './images/catalin-jora-photo.png';
 
 const ITEMS = [
   {
@@ -116,6 +117,12 @@ const ITEMS = [
     position: 'Sr. SRE engineer at Takeaway.com JET',
     photo: SaifeddineRajhiPhoto,
     url: 'https://www.linkedin.com/in/rajhi-saif/',
+  },
+  {
+    name: 'Catalin Jora',
+    position: 'Cloud Consultant at FikaWorks',
+    photo: CatalinJoraPhoto,
+    url: 'https://www.linkedin.com/in/jocatalin/',
   },
 ];
 
