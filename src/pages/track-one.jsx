@@ -5,7 +5,7 @@ import React from 'react';
 import Schedule from 'components/pages/schedule/schedule/track-one';
 import Layout from 'components/shared/layout/track-layout';
 import SEO from 'components/shared/seo';
-import Sponsors from 'components/shared/sponsors';
+// import Sponsors from 'components/shared/sponsors';
 import SEO_DATA from 'constants/seo-data';
 
 const SchedulePage = ({ location }) => (
@@ -15,7 +15,7 @@ const SchedulePage = ({ location }) => (
       <h1 className="text-6xl font-bold leading-denser tracking-[-0.01em] md:text-4xl">Track 1</h1>
     </div>
     <Schedule location={location} className="mb-0 pb-0" />
-    <Sponsors className="mt-0 pt-0" />
+    {/* <Sponsors className="mt-0 pt-0" /> */}
   </Layout>
 );
 

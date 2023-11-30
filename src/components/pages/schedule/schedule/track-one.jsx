@@ -424,7 +424,7 @@ const Schedule = ({ location }) => {
   }, [location]);
 
   return (
-    <section className="safe-paddings pt-9 lg:px-8 md:px-5 sm:pb-24 sm:pt-10 xs:px-0">
+    <section className="safe-paddings lg:px-8 md:px-5 sm:pb-24 xs:px-0">
       <ul className="mx-auto w-[1072px] max-w-full rounded-[10px] border border-primary-2 shadow-lg">
         {ITEMS.map(({ id, time, title, duration, isKeynote, speakers, coincidedEvent }, index) => {
           const isEven = index % 2 === 1;
@@ -483,7 +483,7 @@ const Schedule = ({ location }) => {
                       </span>
                     )}
                   </h3>
-                  <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
+                  {/* <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
                     <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
                       {duration}
                     </span>
@@ -510,7 +510,7 @@ const Schedule = ({ location }) => {
                         ))}
                       </ul>
                     )}
-                  </div>
+                  </div> */}
                 </div>
                 {/* {coincidedEvent && (
                   <div

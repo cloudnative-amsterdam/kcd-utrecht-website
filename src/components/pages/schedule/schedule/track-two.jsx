@@ -233,7 +233,7 @@ const Schedule = ({ location }) => {
   }, [location]);
 
   return (
-    <section className="safe-paddings pt-9 lg:px-8 md:px-5 sm:pt-10 xs:px-0">
+    <section className="safe-paddings lg:px-8 md:px-5 xs:px-0">
       <ul className="mx-auto w-[1072px] max-w-full rounded-[10px] border border-primary-2 shadow-lg">
         {ITEMS.map(({ id, time, title, duration, isKeynote, speakers, coincidedEvent }, index) => {
           const isEven = index % 2 === 1;
@@ -292,34 +292,7 @@ const Schedule = ({ location }) => {
                       </span>
                     )}
                   </h3>
-                  <div className="mt-auto flex items-center gap-x-8 sm:gap-x-7">
-                    <span className="rounded-full bg-yellow px-2 py-2 text-[13px] font-semibold leading-none tracking-tighter text-primary-1 md:text-xs">
-                      {duration}
-                    </span>
-                    {speakers && speakers.length > 0 && (
-                      <ul className="relative inline-flex columns-3 gap-x-5 before:absolute before:top-0 before:bottom-0 before:-left-4 before:my-auto before:h-1 before:w-1 before:rounded-full before:bg-primary-3 sm:gap-x-4">
-                        {speakers.map(({ name, photo }, index) => (
-                          <li className="w-full" key={index}>
-                            <figure className="flex items-center gap-x-2">
-                              <img
-                                className="h-7 w-7 rounded-full"
-                                src={photo || UserPhoto}
-                                width={28}
-                                height={28}
-                                alt={name}
-                                loading="lazy"
-                              />
-                              {/* {speakers.length <= 3 && ( */}
-                              <figcaption className="text-sm font-medium leading-none text-primary-5 md:text-[13px]">
-                                {name}
-                              </figcaption>
-                              {/* )} */}
-                            </figure>
-                          </li>
-                        ))}
-                      </ul>
-                    )}
-                  </div>
+                 
                 </div>
                 {coincidedEvent && (
                   <div
