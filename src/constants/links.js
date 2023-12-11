@@ -70,6 +70,15 @@ export default {
     to: 'https://www.linkedin.com/company/cloudnativenl/',
     target: '_blank',
   },
+  // Social-links
+  photos: {
+    to: 'https://drive.google.com/drive/u/0/folders/1xE6quWLHGXHmXLb8L5ZZn7oMtcb0vyfV',
+    target: '_blank',
+  },
+  survey: {
+    to: 'https://docs.google.com/forms/d/e/1FAIpQLSepVSp3ijXIy_hHdsrpJEQQbCpaqIuD3sdrEO-3wW8_OdPWYQ/viewform',
+    target: '_blank',
+  },
   twitter: {
     to: 'https://twitter.com/cloudnativeams',
     target: '_blank',

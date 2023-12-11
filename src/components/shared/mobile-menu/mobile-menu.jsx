@@ -60,8 +60,11 @@ const MobileMenu = ({ isOpen, onButtonClick }) => {
             ))}
           </ul>
         </div>
-        <Button className="mt-7 text-white" theme="blue" size="lg" {...links.tickets}>
-          Get your ticket
+        <Button className="mt-7 text-white" theme="blue" size="lg" {...links.photos}>
+          Photos
+        </Button>
+        <Button className="mt-7 text-white" theme="blue" size="lg" {...links.survey}>
+          Survey
         </Button>
       </m.nav>
     </LazyMotion>
