@@ -5,7 +5,7 @@ import LINKS from 'constants/links.js';
 
 const TITLE = 'Schedule for <time class="text-blue-1 xs:block">1 December, 2023</time>';
 const DESCRIPTION =
-  "Get ready for an action-packed day. With two tracks of insightful and interesting talks, you'll have plenty of opportunities to learn from experts in the field. The whole event will be held in English.";
+  'We hope you had a great time attending this event. Please fill in the survey and have a look at the photos using the links below.';
 
 const Hero = () => (
   <section className="safe-paddings pt-24 pb-10 lg:pt-[4.5rem] md:pt-16 md:pb-4 sm:py-8">
@@ -21,18 +21,18 @@ const Hero = () => (
         className="mt-10 shadow-xl hover:bg-blue-2 hover:shadow-[0px_15px_30px_#adadad] md:mt-8 xs:mt-7 xs:w-full"
         size="lg"
         theme="blue"
-        {...LINKS.tickets}
+        {...LINKS.photos}
       >
-        Get your ticket
+        Photos
       </Button>
-      {/* <Button
-        className="mt-7 ml-3 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad]"
+      <Button
+        className="mt-7 ml-3 text-primary-1 shadow-[0_15px_40px_#999999] hover:shadow-[0px_15px_30px_#adadad] xs:ml-0 xs:w-full"
         theme="primary"
         size="lg"
-        {...LINKS.cfp}
+        {...LINKS.survey}
       >
-        Call for Papers
-      </Button> */}
+        Survey
+      </Button>
     </div>
   </section>
 );
