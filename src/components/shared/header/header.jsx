@@ -17,10 +17,10 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage
   const getAnchor = (str) => slugify(str).toLocaleLowerCase();
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const handleModalShow = () => {
-    document.body.classList.add('overflow-hidden');
-    setIsModalVisible(true);
-  };
+  // const handleModalShow = () => {
+  //   document.body.classList.add('overflow-hidden');
+  //   setIsModalVisible(true);
+  // };
 
   const handleModalHide = () => {
     document.body.classList.remove('overflow-hidden');
@@ -82,9 +82,12 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage
           className="-mr-2 md:hidden"
           theme="primary"
           size="sm"
-          onClick={() => handleModalShow()}
+          target="_blank"
+          rel="noopener noreferrer"
+          to="https://youtube.com/playlist?list=PLj6h78yzYM2P-O-2wgyppNAbNMNSpwQrm&si=XIMv-Vizcz53xM7v"
+          // onClick={() => handleModalShow()}
         >
-          KCD Amsterdam 2023 Video
+          KCD Utrecht 2023 Video
         </Button>
 
         <Burger
