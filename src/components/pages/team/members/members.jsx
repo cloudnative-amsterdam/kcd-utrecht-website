@@ -5,6 +5,7 @@ import Link from 'components/shared/link';
 
 import AlessandroVozzaPhoto from './images/alessandro-vozza-photo.png';
 import CarlosMestrePhoto from './images/carlos-mestre-photo.jpeg';
+import CatalinJoraPhoto from './images/catalin-jora-photo.png';
 import FahdEkadioinPhoto from './images/fahd-ekadioin-photo.png';
 import KarlaFeijooPhoto from './images/karla-feijoo-photo.png';
 import LucaCamphuisenPhoto from './images/luca-camphuisen-photo.png';
@@ -19,7 +20,6 @@ import SaifeddineRajhiPhoto from './images/saifeddine-rajhi-photo.png';
 import SerkanCapkanPhoto from './images/serkan-capkan-photo.jpeg';
 import SeviKarakulakPhoto from './images/sevi-karakulak-photo.jpg';
 import WilliamRizzoPhoto from './images/william-rizzo-photo.png';
-import CatalinJoraPhoto from './images/catalin-jora-photo.png';
 
 const ITEMS = [
   {

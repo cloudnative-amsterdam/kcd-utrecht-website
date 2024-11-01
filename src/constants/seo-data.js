@@ -1,8 +1,8 @@
 export default {
   schedule: {
-    title: 'Kubernetes Community Days Utrecht - Event Schedule for December 1, 2023',
+    title: 'Kubernetes Community Days Utrecht - Event Schedule for July 3, 2025',
     description:
-      'Explore the detailed agenda for Kubernetes Community Days in Utrecht on December 1, 2023. Listen to expert talks, and connect with Kubernetes professionals. Plan your day now!',
+      'Explore the detailed agenda for Kubernetes Community Days in Utrecht on July 3, 2025. Listen to expert talks, and connect with Kubernetes professionals. Plan your day now!',
   },
   workshops: {
     title: 'Workshops — Kubernetes Community Days',
