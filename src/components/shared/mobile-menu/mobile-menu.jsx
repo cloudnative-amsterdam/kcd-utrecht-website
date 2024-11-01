@@ -2,7 +2,7 @@ import { m, LazyMotion, domAnimation, useAnimation } from 'framer-motion';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import links from 'constants/links';
+// import links from 'constants/links';
 import MENUS from 'constants/menus';
 import useScrollOverflow from 'hooks/use-scroll-overflow';
 
@@ -60,11 +60,18 @@ const MobileMenu = ({ isOpen, onButtonClick }) => {
             ))}
           </ul>
         </div>
-        <Button className="mt-7 text-white" theme="blue" size="lg" {...links.photos}>
+        {/* <Button className="mt-7 text-white" theme="blue" size="lg" {...links.photos}>
           Photos
-        </Button>
-        <Button className="mt-7 text-white" theme="blue" size="lg" {...links.survey}>
-          Survey
+        </Button> */}
+        <Button
+          className="mt-7 text-white"
+          theme="blue"
+          size="lg"
+          target="_blank"
+          rel="noopener noreferrer"
+          to="https://youtube.com/playlist?list=PLj6h78yzYM2P-O-2wgyppNAbNMNSpwQrm&si=XIMv-Vizcz53xM7v"
+        >
+          Videos KCD Utrecht 2023
         </Button>
       </m.nav>
     </LazyMotion>

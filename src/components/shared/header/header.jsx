@@ -11,7 +11,7 @@ import Button from '../button';
 import Link from '../link';
 import Modal from '../modal';
 
-import Logo from './images/kcd-utrecht.png';
+// import Logo from './images/kcd-utrecht.png';
 
 const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage }) => {
   const getAnchor = (str) => slugify(str).toLocaleLowerCase();
@@ -54,7 +54,8 @@ const Header = ({ isMobileMenuOpen, onBurgerClick, additionalClassName, homepage
     >
       <div className="container flex items-center justify-between pt-5 pb-2">
         <Link className="z-50 ml-2" to="/">
-          <img className="h-20 md:h-14" src={Logo} alt="KCD Utrecht" />
+          <strong>KCD Utrecht</strong>
+          {/* <img className="h-20 md:h-14" src={Logo} alt="KCD Utrecht" /> */}
         </Link>
 
         <nav>
