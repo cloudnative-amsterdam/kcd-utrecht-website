@@ -7,7 +7,7 @@ import illustration from './images/utrecht.png';
 
 const TITLE = 'Kubernetes Community Days Utrecht';
 
-const DESCRIPTION = 'KCD Utrecht 2025 Coming Soon!';
+const DESCRIPTION = 'Venue will be announced soon. Stay tuned!';
 
 const Hero = () => (
   <section className="safe-paddings overflow-hidden bg-[#EDC3C7] bg-opacity-10 pt-28 pb-40 lg:pb-32 md:pt-24 md:pb-[500px] sm:pb-[520px] [@media(max-width:600px)]:pb-[430px] [@media(max-width:460px)]:pb-[420px]">
@@ -18,7 +18,7 @@ const Hero = () => (
           className="rounded-3xl bg-yellow px-4 py-2 text-sm font-bold leading-none text-black"
           dateTime="2025-07-03"
         >
-          2025 Coming Soon!
+          July 3rd, 2025
         </time>
         <h1 className="mt-3 max-w-[570px] text-8xl font-bold leading-denser text-primary-1 lg:max-w-[500px] sm:text-7xl">
           {TITLE}
