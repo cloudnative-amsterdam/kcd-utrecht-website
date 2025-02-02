@@ -45,7 +45,11 @@ export default {
     target: '_blank',
   },
   cfp: {
-    to: 'https://forms.gle/JyrTeEJuk2PVAT7d9',
+    to: 'https://sessionize.com/kcd-utrecht-2025',
+    target: '_blank',
+  },
+  prospectus: {
+    to: 'https://drive.google.com/file/d/1PIgKcXWh8qz3--xD5keGhkyIjTJnmhvg/view?pli=1 ',
     target: '_blank',
   },
   mission: {

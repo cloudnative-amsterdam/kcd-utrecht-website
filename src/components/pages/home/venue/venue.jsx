@@ -13,15 +13,6 @@ const Venue = () => (
         community-organized events that gather adopters and technologists from open source and cloud
         native communities, supported by the Cloud Native Computing Foundation (CNCF).
       </p>
-      <p className="mt-7">
-        This is the first KCD in <span className="font-bold">Utrecht</span>, and we’re excited to
-        bring the community together. We want to provide a platform for professionals and experts
-        from all levels and backgrounds to learn, network, and share their knowledge on all things
-        cloud native.
-      </p>
-      <p className="mt-7 mb-0">
-        <span className="font-bold">Date:</span> December 1st, 2023
-      </p>
       <p className="mt-0">
         <span className="font-bold">Location:</span>{' '}
         <Link {...LINKS.googlemaps}>
