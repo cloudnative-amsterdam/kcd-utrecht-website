@@ -365,7 +365,6 @@ const Schedule = ({ location }) => {
                                   src={photo || UserPhoto}
                                   width={28}
                                   height={28}
-                                  alt={`${name} photo`}
                                   loading="lazy"
                                 />
                                 {speakers.length > 0 && (
