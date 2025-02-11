@@ -99,4 +99,8 @@ export default {
     to: 'https://www.youtube.com/@cncf',
     target: '_blank',
   },
+  eventpage: {
+    to: 'https://community.cncf.io/events/details/cncf-kcd-netherlands-presents-kcd-utrecht-2025/',
+    target: '_blank',
+  },
 };
