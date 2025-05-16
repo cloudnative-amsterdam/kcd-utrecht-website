@@ -7,7 +7,7 @@ import illustration from './images/KCD-2025-Utrecht_color.png';
 
 const TITLE = 'Kubernetes Community Days Utrecht';
 
-const DESCRIPTION = 'At the jaarbeurs in Utrecht, the Netherlands!';
+const DESCRIPTION = 'At the Jaarbeurs in Utrecht, the Netherlands!';
 
 const Hero = () => (
   <section className="safe-paddings overflow-hidden bg-[#EDC3C7] bg-opacity-10 pt-28 pb-40 lg:pb-32 md:pt-24 md:pb-[500px] sm:pb-[520px] [@media(max-width:600px)]:pb-[430px] [@media(max-width:460px)]:pb-[420px]">
@@ -36,7 +36,7 @@ const Hero = () => (
         </Button>
       </div>
       <img
-        className="visible mt-[-5rem] h-[80vh] flex-1 object-contain md:mt-0 md:ml-10 sm:invisible"
+        className="visible mt-[-6rem] h-[60vh] flex-1 object-contain md:mt-0 md:ml-10 sm:invisible"
         src={illustration}
         width="auto"
         loading="eager"
