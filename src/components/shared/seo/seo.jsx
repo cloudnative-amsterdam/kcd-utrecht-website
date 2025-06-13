@@ -9,7 +9,7 @@ const defaultDescription =
 const SEO = ({ title, description, pathname }) => {
   const {
     site: {
-      siteMetadata: { siteTitle, siteDescription, siteUrl, siteImage },
+      siteMetadata: { siteTitle, siteDescription, siteUrl },
     },
   } = useStaticQuery(graphql`
     query SEO {
@@ -18,7 +18,6 @@ const SEO = ({ title, description, pathname }) => {
           siteTitle
           siteDescription
           siteUrl
-          siteImage
         }
       }
     }
@@ -37,7 +36,6 @@ const SEO = ({ title, description, pathname }) => {
       <meta property="og:title" content={currentTitle} />
       <meta property="og:description" content={currentDescription} />
       <meta property="og:url" content={currentUrl} />
-      <meta property="og:image" content={siteUrl + siteImage} />
       <meta property="og:type" content="website" />
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
