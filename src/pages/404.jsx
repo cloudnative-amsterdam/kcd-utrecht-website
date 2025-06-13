@@ -3,8 +3,6 @@ import React from 'react';
 
 import Layout from 'components/shared/layout';
 import Link from 'components/shared/link';
-import SEO from 'components/shared/seo';
-import SEO_DATA from 'constants/seo-data';
 
 // TODO: Add colors and font sizes, check out the reference — https://tailwindui.com/components/marketing/feedback/404-pages#component-5792f8fd3c3c2be236e72c170345a0ce
 //       No need to change anything else. Only colors and font sizes
@@ -26,5 +24,5 @@ const NotFoundPage = () => (
 export default NotFoundPage;
 
 export const Head = ({ location: { pathname } }) => (
-  <SEO {...SEO_DATA.page404} pathname={pathname} />
+  <title>Page not found</title>
 );
