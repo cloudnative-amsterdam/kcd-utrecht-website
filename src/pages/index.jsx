@@ -13,7 +13,7 @@ import SEO from 'components/shared/seo';
 const HomePage = () => (
   <Layout homepage>
     <Hero />
-    <Venue />
+    {/* <Venue /> */}
     {/* <Workshops /> */}
     {/* <Supported />
     <Sponsors />
